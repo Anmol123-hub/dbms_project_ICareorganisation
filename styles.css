@@ -1,0 +1,438 @@
+html{
+  font-family: 'open sans';
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar-custom {
+	background-color: #150080;
+  	border-color: #425766;
+  	background-image: linear-gradient(360deg,#2300e6 0%,#100357 100%);
+	font-size: 20px;
+}
+
+.navbar-nav {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.navbar-nav .nav-item {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    border-bottom: 3px solid red;
+    color: white;
+}
+
+.pattern {
+	position: relative;
+	background-color: #3bb78f;
+	background-image: linear-gradient(360deg,#fc00ce 0%,#0727e0 100%);
+	padding-top: 130px;
+}
+
+.pattern:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 250px;
+	background: url(https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.geeks {
+			padding: 50px;
+			margin-left: 100px;
+			margin-top: 0px;
+
+		}
+
+		section {
+			width: 100%;
+			min-height: 200px;
+		}
+
+h1{
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.fancy-cards{
+  text-align: center;
+}
+
+.fancy-cards .fancy-card{
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  left: 20px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+.fancy-card .top,
+.fancy-card .middle,
+.fancy-card .bottom{
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 250px;
+
+  height: 350px;
+
+  transition: transform 300ms linear-out;
+}
+
+.fancy-card .top{
+  z-index: 3;
+  transform: scale(1.0);
+  transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  /*background-image: url('images/all_logos/environment_logo.png');*/
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 1px 3px rgba(25,25,25,0.30);
+}
+
+.fancy-card1 .top{
+  z-index: 3;
+  transform: scale(1.0);
+  transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  background-image: url('images/all_logos/environment_logo.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 1px 3px rgba(25,25,25,0.30);
+}
+
+.fancy-card .middle{
+  position: absolute;
+  background: #aaa;
+  top: 0px;
+  z-index: 2;
+  transform: rotate(0deg);
+  transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.fancy-card .bottom{
+  position: absolute;
+  background: #ccc;
+  top: 0px;
+  z-index: 1;
+  transform: rotate(0deg);
+  transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.fancy-card .caption{
+  overflow: hidden;
+  background: rgba(255,255,255,0.75);
+  padding: 15px 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+.fancy-card .caption .title{
+  color: #222;
+  margin: 0px 0px 15px 0px;
+  font-size: 1.4rem;
+}
+.fancy-card .caption .button{
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  border: solid 1px #555;
+  padding: 7px 13px;
+  background-color: transparent;
+  transition: all 300ms ease-in;
+}
+
+
+/*hovering*/
+.fancy-card:hover .top{
+  transform: scale(1.05);
+}
+.fancy-card:hover .middle{
+ transform: rotate(-7deg);
+ box-shadow: 1px 1px 2px rgba(74, 74, 74, 0.35);
+}
+.fancy-card:hover .bottom{
+  transform: rotate(7deg);
+  box-shadow: 1px 1px 2px rgba(113, 113, 113, 0.35);
+}
+
+.fancy-card:hover .button{
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  border: 0px;
+}
+
+.navigation{
+	margin-top: 10px;
+}
+.a{
+  margin-top: 10px;
+}
+
+
+.circular {
+	width: 500px;
+	height: 400px;
+ margin-top: 0px;
+ margin-left: 200px;
+ margin-right: 30px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150spx;
+	float:right;
+	background-color: white;
+	background: url(images/aboutus1.jpg);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+	.circular1 {
+		width: 1400px;
+		height: 400px;
+	 margin-top: 0px;
+	 margin-left: 40px;
+		border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+		background-image: linear-gradient(-60deg,
+	#436ffa 0%,#9eb3f7 100%);
+
+		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		}
+
+		.circular2 {
+			width: 1390px;
+			height: 400px;
+		 margin-top: 25px;
+		 margin-left: 0px;
+		 margin-right: 20px;
+			border-radius: 150px;
+			-webkit-border-radius: 150px;
+			-moz-border-radius: 150px;
+/*			background-image: linear-gradient(-60deg,
+		#436ffa 0%,#9eb3f7 100%);*/
+
+			box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+			-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+			-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+			}
+
+		.scroll {
+
+	background-image: linear-gradient(-70deg,
+#02194d 30%,#1888f0 100%);
+	padding: 10px 70px;
+	color: #666666;
+	height: 600px;
+	margin-top: 60px;
+}
+
+.team_img {
+  border-radius: 50%;
+
+	 margin-top: 90px;
+	 margin-left: 100px;
+	 margin-right: 23px;
+}
+
+.scroll1 {
+
+background-image: linear-gradient(-70deg,#02194d 30%,#1888f0 100%);
+padding: 10px 70px;
+color: #666666;
+height: 850px;
+margin-top: 60px;
+}
+
+/*img {
+  border-radius: 50%;
+
+	 margin-top: 90px;
+	 margin-left: 100px;
+	 margin-right: 23px;
+}*/
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #bcbec4;
+  color:#f71919;
+	height: 210px;
+	margin-top: -10px;
+}
+p.footer{
+	color:#f71919;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+     background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+    color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s
+}
+
+.social-circle i {
+    color: #fff;
+    transition: all 0.8s;
+    transition: all 0.8s
+}
+
+
+.box {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: -100px;
+    left: 135%;
+    background: #191919;
+
+    text-align: center;
+    transition: 0.25s;
+    margin-top: -550px;
+		margin-bottom: 0px;
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="number"],
+.box textarea[type="message"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    /*height: 60px;*/
+}
+
+.box h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"]:focus,
+
+.box input[type="email"]:focus,
+.box input[type="number"]:focus,
+.box textarea[type="message"]:focus
+{
+    width: 300px;
+    border-color: #2ecc71;
+    /*height: 60px;*/
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    /*height: 60px;*/
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71
+}
+
+.forgot {
+    text-decoration: underline
+}
+
+.map{
+	margin-top: 50px;
+}
+.headingAboutus{
+margin-left:350px;
+padding-top: 10px;
+
+font-size: 30px;
+font-weight: bold;
+
+}
+.heading{
+margin-left:550px;
+padding-top: 10px;
+
+font-size: 30px;
+font-weight: bold;
+
+}

@@ -1,0 +1,279 @@
+html{
+  font-family: 'open sans';
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+  background-position: left top;
+  background-image: url("blood_donation_bg.jpg");
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.navbar-custom {
+	background-color: #150080;
+  	border-color: #425766;
+  	background-image: linear-gradient(360deg,#2300e6 0%,#100357 100%);
+	font-size: 20px;
+}
+
+.navbar-nav {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.navbar-nav .nav-item {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    border-bottom: 3px solid red;
+    color: white;
+}
+/* .header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+} */
+
+
+/*Side Bar*/
+
+
+
+/* FORM */
+/* body {
+  background: #f1f1f1;
+} */
+.box {
+  width: 500px;
+  box-shadow: 0 0 100px #f6ff00;
+  -webkit-box-shadow: 0 0 100px #f6ff00;
+  -moz-box-shadow: 0 0 100px #f6ff00;
+   max-width: 100%;
+
+  /* box-shadow: 0px 100px 300px rgba(0, 0, 0, 0.2); */
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 30px 30px 30px;
+  background: #fff;
+  position: relative;
+  margin-right: 50px;
+}
+input,label {
+  display: block;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #585858;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.button {
+  border-radius: 100px;
+  border: none;
+  margin-top:50px;
+  padding: 20px;
+  font-weight: bold;
+  background: #00d7fb;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:all .3s;
+}
+.button:hover {
+  background: #0193ac;
+  color: #fff;
+}
+
+.field {
+  border-radius: 100px;
+  border: none;
+  padding: 16px;
+  background: #f1f1f1;
+}
+.hidden {
+  visibility: hidden;
+}
+.show {
+  visibility: visible;
+}
+.header {
+  position: absolute;
+  background: #00d7fb;
+  width: 100%;
+  height:60px;
+  padding:20px 0;
+  left:0;
+  top:0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color:#fff;
+  text-align:center;
+  font-size:3em;
+  overflow:hidden;
+}
+.header p {
+  margin:0;
+  position:absolute;
+  top:20%;
+  left:28%;
+  font-size:40px;
+}
+
+.animation {
+  position:absolute;
+  animation: mymove 0.5s forwards;
+}
+
+@keyframes mymove {
+  0%   {left: 50%;}
+  100%  {left: 120%; as}
+}
+.box .form {
+  padding-top: 90px;
+}
+
+
+
+/*FOOTER*/
+.footer {
+text-align: center;
+padding: 20px;
+background-color: #bcbec4;
+color:#f71919;
+height: 210px;
+margin-top: 20px;
+}
+p.footer{
+color:#f71919;
+
+}
+h5{
+  font-size: 20px;
+}
+h2.heading_footer{
+  font-size: 20px;
+}
+
+ul.social-network {
+list-style: none;
+display: inline;
+margin-left: 0 !important;
+padding: 0
+}
+
+ul.social-network li {
+display: inline;
+margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+color: #44BCDD
+}
+
+.social-circle li a {
+display: inline-block;
+position: relative;
+margin: 0 auto 0 auto;
+border-radius: 50%;
+text-align: center;
+width: 50px;
+height: 50px;
+font-size: 20px
+}
+
+.social-circle li i {
+margin: 0;
+line-height: 50px;
+text-align: center
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+transform: rotate(360deg);
+transition: all 0.2s
+}
+
+.social-circle i {
+color: #fff;
+transition: all 0.8s;
+transition: all 0.8s
+}
+
+/*BACKGROUND DIV1*/
+.bg-primary{
+  background-image: linear-gradient(-70deg,
+#00ded3 50%,#11004f 100%);
+  box-shadow: 0 0 100px #00fff2;
+-webkit-box-shadow: 0 0 100px #00fff2;
+-moz-box-shadow: 0 0 100px #00fff2;
+/* background-image: url("https://image.freepik.com/free-vector/gradient-dark-wavy-background_23-2148385756.jpg");
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover; */
+  /* height: 500px; */
+
+}
+section{
+margin-top: 20px;
+padding-bottom: 50px;
+margin-left: -125px;
+margin-right: -186px;
+}
+
+/*TEXT*/
+/* a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+} */

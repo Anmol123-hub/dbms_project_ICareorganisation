@@ -1,0 +1,44 @@
+[29-Apr-2021 05:50:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 06:45:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 07:49:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 08:03:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 08:03:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 10:52:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 11:17:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 12:50:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 15:27:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 18:28:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 18:32:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 19:40:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 19:45:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 19:47:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 20:00:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 20:02:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 20:04:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[29-Apr-2021 20:14:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[30-Apr-2021 02:09:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[30-Apr-2021 09:20:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/stteresakolkata/public_html/dashboard/settings.php:69
+Stack trace:
+#0 {main}
+  thrown in /home1/stteresakolkata/public_html/dashboard/settings.php on line 69
+[30-Apr-2021 09:34:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 119
+[30-Apr-2021 09:37:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[30-Apr-2021 09:37:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[30-Apr-2021 09:38:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[30-Apr-2021 09:38:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboard/userDashboard.php:14) in /home1/stteresakolkata/public_html/dashboard/userDashboard.php on line 15
+[30-Apr-2021 12:33:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in /home1/stteresakolkata/public_html/dashboard/settings.php:164
+Stack trace:
+#0 {main}
+  thrown in /home1/stteresakolkata/public_html/dashboard/settings.php on line 164
+[30-Apr-2021 12:34:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in /home1/stteresakolkata/public_html/dashboard/settings.php:164
+Stack trace:
+#0 {main}
+  thrown in /home1/stteresakolkata/public_html/dashboard/settings.php on line 164
+[30-Apr-2021 12:34:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in /home1/stteresakolkata/public_html/dashboard/settings.php:164
+Stack trace:
+#0 {main}
+  thrown in /home1/stteresakolkata/public_html/dashboard/settings.php on line 164
+[30-Apr-2021 12:34:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in /home1/stteresakolkata/public_html/dashboard/settings.php:164
+Stack trace:
+#0 {main}
+  thrown in /home1/stteresakolkata/public_html/dashboard/settings.php on line 164

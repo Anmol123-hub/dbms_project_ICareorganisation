@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Icare | Store</title>
+    <link rel="shortcut icon" href="Images/DBMS_logo_final.ico" type="image/x-icon">
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>.
+    <script src="store.js" async></script>
+
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- Navbar -->
+        <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <a class="navbar-brand" href="../Home Page/home.html">
+                    <img src="./Images/DBMS_logo.png" height="65px" width="65px" alt="ICARE ORGANISATION"></img>
+                    <a href="../Home Page/home.html" style="color: white; text-decoration: none;">ICare Organization</a>
+                </a>
+
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="headingSelect">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick="changeLink()">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus" onclick="changeLink()">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team" onclick="changeLink()">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus" onclick="changeLink()">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li>
+                        <a class="nav-link" href="#" style="font-weight: bold;font-size: 25px;">Logout <span><i class="fas fa-sign-out-alt"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="../home.html">
+                    <img src="Images/DBMS_logo.png" height="60px" width="60px" alt="ICARE ORGANISATION"></img>
+                    <a href="../home.html" style="color: white; text-decoration: none;">ICare Organization</a>
+                </a>
+
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Modules
+                      </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="home.html">Environment</a>
+                            <a class="dropdown-item" href="../healthcare/home_page.html">Health Care</a>
+                            <a class="dropdown-item" href="../Donation/donation-homepage.html">Donation</a>
+                            <a class="dropdown-item" href="../mini_store/store.html">Mini Store</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#contactus">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../dashboardCheck.php">Dashboard</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li>
+                        <a class="nav-link" href="../index.html" style="font-weight: bold; font-size: 20px;">Logout <span><i class="fas fa-sign-out-alt"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- End of navbar-->
+    </header>
+
+    <main class="main-content">
+        <h2 class="mini-header">Mini Store&nbsp;&nbsp;<i class="fas fa-store"></i></h2>
+        <section class="container content-section">
+            <h2 class="section-header">Essential Items</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Sanatizer</span>
+                    <img class="shop-item-image" src="./Images/products/sanatizer.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.135</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Mask</span>
+                    <img class="shop-item-image" src="./Images/products/mask.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.164</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handwash</span>
+                    <img class="shop-item-image" src="./Images/products/handwash.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.220</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <!-- <div class="shop-item">
+                    <span class="shop-item-title">Gloves</span>
+                    <img class="shop-item-image" src="./Images/products/gloves.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs. 200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Healthy diet Items</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Giloy</span>
+                    <img class="shop-item-image" src="./Images/products/gilow.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Dry fruits</span>
+                    <img class="shop-item-image" src="./Images/products/dryfruits.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.335</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                <!-- <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="./Images/products/sanatizer.webp" width="100" height="100">
+                        <span class="cart-item-title">Sanataizer</span>
+                    </div>
+                    <span class="cart-price cart-column">₹135</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="./Images/products/mask.webp" width="100" height="100">
+                        <span class="cart-item-title">Mask</span>
+                    </div>
+                    <span class="cart-price cart-column">₹164</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div> -->
+            </div>
+            <div class="cart-total">
+                <input type="checkbox" name="checkredem" id="checkredem" class="largerCheckbox" onclick="EnableDisableTextBox(this)">
+                <strong>&nbsp;Would you like to redeem your reward points?&nbsp;</strong>
+                <input type="number" name="pointstf" id="pointstf" placeholder="Enter reward points" onchange="pointsChanged()" onblur="UpdatePointsOnChange()" data-toggle="tooltip" title="You will have to use minimum 1 reward pont" disabled>
+            </div>
+
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price" id="cart-total-price">Rs.0</span>
+            </div>
+
+            <!-- <button class="btn btn-primary btn-purchase" type="button" onclick="document.location='checkout.html'">PURCHASE</button> -->
+            <button class="btn btn-primary btn-purchase" type="button" onclick="passTotalValue()">CHECKOUT</button>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>Keep In Touch</h2>
+        <hr style="background-color: white;">
+        <div class="col-md-12">
+            <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/icareorganisation123" target="_blank" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li> 
+
+			<li><a href="https://twitter.com/IcareOrganisat1" target="_blank" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> 
+
+			<li><a href="https://www.instagram.com/icareorganisation1/" target="_blank" class="icoGoogle" title="Instagram"><i class="fab fa-instagram"></i></a></li> 
+            </ul>
+        </div>
+        <br>
+        <h5><a style="color: blue;">Copyright ICare © 2019-2022. All Rights Reserved.</a></h5>
+    </footer>
+    <!-- End of footer -->
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

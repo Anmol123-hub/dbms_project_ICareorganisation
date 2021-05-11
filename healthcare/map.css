@@ -1,0 +1,236 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map {
+  height: 100%;
+  width:100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  /*height: 100%;*/
+  margin: 0;
+  padding: 0;
+  	margin: 0px;
+	padding: 0px;
+  background-position: left top;
+  background-image: url("white_bg.jpg");
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+body {
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+.container {
+    width: 100%!important;
+}
+
+table {
+  font-size: 12px;
+  width:100%!important;
+ 
+
+}
+
+input[type=text], select, option {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.hotel-search {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color:transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  margin-top:115px;
+  width: 900px;
+  z-index: 1;
+  padding-left: 20px;
+  text-align: center;
+}
+
+#map {
+  margin-top: 50px;
+  margin-left: 20px;
+    height: 400px!important;
+ 
+  width: 1150px!important;
+    border: 5px solid;
+}
+
+
+#listing {
+  width: 300px;
+  height: 400px;
+  overflow: auto;
+  /*left: 442px;*/
+  margin-top: 50px;
+  cursor: pointer;
+    border: 5px solid;
+  /*overflow-x: hidden;*/
+ 
+}
+
+#findhotels {
+  font-size: 14px;
+  
+}
+
+#locationField {
+  -webkit-box-flex: 1 1 190px;
+  -ms-flex: 1 1 190px;
+  flex: 1 1 190px;
+  margin: 0 8px;
+}
+
+#controls {
+  -webkit-box-flex: 1 1 140px;
+  -ms-flex: 1 1 140px;
+  flex: 1 1 140px;
+}
+
+#autocomplete {
+  width: 100%;
+}
+
+#country {
+  width: 100%;
+}
+
+.placeIcon {
+  width: 20px;
+  height: 34px;
+  margin: 4px;
+}
+
+.hotelIcon {
+  width: 24px;
+  height: 24px;
+}
+
+#resultsTable {
+  border-collapse: separate;
+  
+  width: 240px;
+}
+
+#rating {
+  font-size: 13px;
+  font-family: Arial Unicode MS;
+}
+
+.iw_table_row {
+  height: 18px;
+}
+
+.iw_attribute_name {
+  font-weight: bold;
+  text-align: right;
+}
+
+.iw_table_icon {
+  text-align: right;
+}
+
+
+
+/*FOOTER*/
+.footer {
+text-align: center;
+padding: 20px;
+background-color: #bcbec4;
+color:#f71919;
+height: 210px;
+margin-top: 900px;
+}
+p.footer{
+color:#f71919;
+
+}
+h5{
+  font-size: 20px;
+}
+h2.heading_footer{
+  font-size: 20px;
+}
+
+ul.social-network {
+list-style: none;
+display: inline;
+margin-left: 0 !important;
+padding: 0
+}
+
+ul.social-network li {
+display: inline;
+margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+color: #44BCDD
+}
+
+.social-circle li a {
+display: inline-block;
+position: relative;
+margin: 0 auto 0 auto;
+border-radius: 50%;
+text-align: center;
+width: 50px;
+height: 50px;
+font-size: 20px
+}
+
+.social-circle li i {
+margin: 0;
+line-height: 50px;
+text-align: center
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+transform: rotate(360deg);
+transition: all 0.2s
+}
+
+.social-circle i {
+color: #fff;
+transition: all 0.8s;
+transition: all 0.8s
+}

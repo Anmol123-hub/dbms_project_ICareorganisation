@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=RocknRoll+One&display=swap" rel="stylesheet">
+       <link rel = "icon" href = "DBMS_logo_final.png" type = "image/x-icon"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <!-- jQuery -->
+
+
+    <title>Sign Up</title>
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+   font-family: 'RocknRoll One', sans-serif;
+    background: linear-gradient(to right, #b92b27, #1565c0)
+}
+
+.box {
+    width: 500px;
+    padding: 40px;
+    position: relative;
+    /*top: 50%;*/
+    left: 25%;
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .box {
+    zoom:1.5;
+    margin: 40px 10px 40px -30px;
+    left:0%;
+  }
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"],
+.box input[type="tel"]
+ {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="password"]:focus,
+.box input[type="tel"]:focus{
+    width: 300px;
+    border-color: #2ecc71
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71
+}
+
+.forgot {
+    text-decoration: underline
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+    color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s
+}
+
+.social-circle i {
+    color: #fff;
+    transition: all 0.8s;
+    transition: all 0.8s
+}
+
+    </style>
+    
+    <script>
+        function viewPswd() {
+            var x = document.getElementById("password-field");
+            var x1 = document.getElementById("password-field1");
+            if (x.type === "password" ) {
+                x.type = "text";
+                x1.type = "text";
+            } else {
+                x.type = "password";
+                x1.type = "password";
+            }
+        }
+            function UncheckAll(){ 
+      var w = document.getElementsByTagName('input'); 
+      for(var i = 0; i < w.length; i++){ 
+        if(w[i].type=='checkbox'){ 
+          w[i].checked = false; 
+        }
+      }
+  } 
+    </script>
+    
+  </head>
+  <body onload = "UncheckAll();">
+
+
+    <div class="container">
+      <div class="col-md-12 col-lg-12">
+              <form class="box" action="connection.php" method="post">
+                  <center style="border:3px solid silver; padding:10px;">
+                    <img src="DBMS_logo_final.png" height="30%" width="30%" />
+                    <h5 class="text-muted">ICare Organisation</h5>
+                  </center><br>
+                  <h1>SIGN UP</h1>
+                  <p class="text-muted"> Please enter your fullname, phone no, email and password!</p> 
+                  <p></p> 
+                  <input type="text" name="username" placeholder="Full Name" required>
+                  <input type="tel" name="phone" placeholder="Phone Number" required>
+                  <input type="email" name="email" placeholder="email@gmail.com" required> 
+                  <input type="password" name="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" title="Password Must Contain - At least 1 Uppercase, At least 1 Lowercase, At least 1 Number, At least 1 Symbol, Min 8 chars and Max 12 chars" id="password-field" required>
+                  <input type="password" name="password1" id="password-field1" placeholder="Re-enter" required>
+                  <input type="checkbox" id="password-view" onclick="viewPswd()"> 
+                  <label class="text-muted" for="password-view">&nbsp; View Password</label> 
+                  <input type="submit" name="" value="Sign Up" >
+              </form>
+      </div>
+</div>
+    </body>
+
+</html>

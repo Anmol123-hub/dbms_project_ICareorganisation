@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>GENERAL CHECKUP</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel = "icon" href =  "DBMS_logo_final.png" type = "image/x-icon"> 
+
+<link rel="stylesheet" href="side_pane_checkup.css">
+    <!-- <link rel="stylesheet" href="form.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
+    <link rel="stylesheet" href="general_checkup.css">
+		<link rel="stylesheet" href="card3.css">
+<link rel="stylesheet" href="top_card.css">
+
+		<!-- <script src="jquery.js"></script> -->
+
+		<style >
+
+		</style>
+		<script type="text/javascript" src="https://raw.githubusercontent.com/micku7zu/vanilla-tilt.js/master/dist/vanilla-tilt.js">
+
+		</script>
+		<script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js">
+
+		</script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+
+
+// NAVBAR
+function changeLink() {
+$(".navbar-nav a").on("click", function(){
+	$(".navbar-nav").find(".active").removeClass("active");
+	$(this).parent().addClass("active");
+});
+}
+
+
+// Form
+var button = document.querySelector('.button');
+var field = document.querySelector('.field');
+var icon = document.querySelector('.header i');
+var text = document.querySelector('.header p');
+
+button.addEventListener('click', function(){
+
+  if(field.value === ''){
+    field.placeholder = 'You must enter your email';
+    // alert('You must enter an email');
+  } else {
+    icon.classList.toggle('show');
+    text.classList.toggle('animation');
+  }
+});
+// function load(){
+// window.location.href="map.html";
+//  }
+// function Nonefunc() {
+		 // var select = document.getElementById("Medicaldonation");
+		 // var dvselect1 = document.getElementById("medicine");
+		 // var dvselect2=document.getElementById("equipment");
+
+    // if(select.value=="none")
+		// {
+		// 	alert("Select the Donation type");
+		//
+    //   	returnToPreviousPage();
+		// }
+		// else {
+		// 	window.location.href="map.html";
+		// }
+		// else{
+	 //
+		//  dvselect1.style.display = ddlPassport.value == "drugs" ? "block" : "none";
+		//  dvselect2.style.display = ddlPassport.value == "Equipments" ? "block" : "none";
+	 // }
+ // }
+
+ function ShowHideDiv() {
+        var select = document.getElementById("Medicaldonation");
+        var select1 = document.getElementById("brand1");
+				var select2=document.getElementById("other");
+					var select3=document.getElementById("other1");
+					// if(select.value=="none")
+					// {
+					// 	alert("Select the Donation type");
+					// 	 // dvselect1.style.display="none";
+					// 	 // dvselect2.style.display="none";
+					// 		returnToPreviousPage();
+					// }
+
+        select1.style.display = select.value == "brand" ? "block" : "none";
+				  select2.style.display = select.value == "other" ? "block" : "none";
+						  select3.style.display = select.value == "other1" ? "block" : "none";
+							// window.location.href="map.html";
+
+
+
+    }
+
+		function req(){
+			var valid;
+			var select = document.getElementById("Medicaldonation");
+			var select1 = document.getElementById("brand1");
+			var select2=document.getElementById("other");
+				var select3=document.getElementById("other1");
+				if(select.value=="brand" || select.value=="other" || select.value=="other1"){
+			if(select1.value=="" && select2.value=="" && select3.value=="")
+			{
+
+					alert("fill the text box");
+          returnToPreviousPage();
+					valid= false;
+				}
+				else{
+
+					valid= true;
+					window.location.href="map.html";
+				}
+        return valid;
+			}
+			else {
+				window.location.href="map.html";
+			}
+
+		}
+
+		var doc = new jsPDF();
+
+ function saveDiv(divId, title) {
+ doc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
+ doc.save('div.pdf');
+}
+
+function printDiv(divId,
+  Prescription) {
+
+  let mywindow = window.open('', 'PRINT', 'height=650,width=900,top=100,left=150');
+
+  mywindow.document.write(`<html><head><title>${Prescription}</title>`);
+  mywindow.document.write('</head><body >');
+  mywindow.document.write(document.getElementById(divId).innerHTML);
+  mywindow.document.write('</body></html>');
+
+  mywindow.document.close(); // necessary for IE >= 10
+  mywindow.focus(); // necessary for IE >= 10*/
+
+  mywindow.print();
+  mywindow.close();
+
+  return true;
+}
+
+function checkup_info(){
+
+	var name=document.getElementById("name");
+var 	email=document.getElementById("email");
+var age=document.getElementById("age");
+var phno=document.getElementById("phno");
+var height=document.getElementById("height");
+var weight=document.getElementById("weight");
+var 	name_val=name.value;
+var 	email_val=email.value;
+var phno_val=phno.value;
+var age_val=age.value;
+var height_val=height.value;
+var weight_val=weight.value;
+var ht=height.value*0.3048;
+var bmi1=weight.value/(ht*ht);
+var bmi=bmi1.toFixed(2);
+var selected = [];
+var num=0;
+ for (var option of document.getElementById('symptoms').options) {
+	 if (option.selected) {
+		 selected.push(option.value);
+	   var num=num+1;
+	 }
+ }
+ if(name_val==""||email_val==""||phno_val==""|| age_val==""||height_val==""||weight_val==""||bmi=="")
+ alert("You haven't filled all the datas in the form");
+ else
+{
+
+var c=0;
+var max=[];
+var result=" ";
+var major=" ";
+var disease=[];
+var medicine=[];
+var diarrhea=["Stomach ache","Bloating","Fever","Nausea","Loose Motion"];
+var indigestion=["Bloating","Nausea","Stomach ache","Vomitting"];
+var gas=["Stomach ache","Bloating","Vomitting","Nausea","Chest pressure","Head ache"];
+var cough=["Fever","Sour throat","Sneezing","Running Nose","Head ache","Loss of Appetite","Cough"];
+var migraine=["Fever","Nausea","Head ache","Vomitting"];
+var conjunctivitis=["Pink or Red eyes","Swollen eyes","Increased tears","Irritation in eye"];
+var infection=["Fever","Rashes or Chills","Vomitting","Cough","Itching or pain","Stomach ache","Sour throat"];
+var asthma=["Cough","Breathlessness","Fast Heartbeat","Chest pressure"];
+if(selected==""){
+selected.push("You have no symptoms");
+result=result+"You have no Symptoms, Thus you have no disease searches";
+document.getElementById("checkup_info").innerHTML="<b>YOUR DETAILS=> </b><br>"+"Full Name=> "+name_val+"<br>"+"Email=> "+email_val+"<br>"+"Phone Number=> "+phno_val+"<br>"+"Age=> "+age_val+"<br>"+"height=> "+height_val+"<br>"+"weight=> "+weight_val+"<br>"+"<br><b>YOUR BODY MASS INDEX=> </b><br>"+bmi+" kg/m²"+"<br>"+"<br><b>SYMPTOMS=></b> <br>"+selected+"<br>"+
+"<br><b>THE DISEASES RELATED TO YOUR SYMPTOMS SEARCHED=></b> <br>"+result+"<br>";
+document.getElementById("bmi").value = bmi;
+ document.getElementById('disease').value="No Diseases"; 
+  document.getElementById('med').value="No Medicine Prescribed"; 
+   document.getElementById('major_dis').value="No Diseases found";
+
+}
+else{
+for(var i=0;i<diarrhea.length;i++)
+{
+
+
+	for(var j=0;j<num;j++)
+	{
+		if(selected[j]==diarrhea[i])
+		{
+			c++;
+		}
+	}
+}
+if(c>0)
+{
+max.push(c);
+
+result=result+"Diarrhea, You have "+c+" symptoms matched for Diarrhea"+"<br> Common Medicine for Diarrhea is: Bismuth subsalicylate"+"<br>";
+disease.push("Diarrhea");
+medicine.push(" Bismuth subsalicylate");
+	c=0;
+}
+
+
+for(var i=0;i<indigestion.length;i++)
+{
+
+
+	for(var j=0;j<num;j++)
+	{
+		if(selected[j]==indigestion[i])
+		{
+			c++;
+		}
+	}
+}
+if(c>0)
+{
+max.push(c);
+result=result+"Indigestion, You have "+c+" symptoms matched for Indigestion"+"<br> Common Medicine for Indigestion is: Omeprazole"+"<br>";
+disease.push("Indigestion");
+medicine.push("Omeprazole");
+	c=0;
+}
+
+for(var i=0;i<gas.length;i++)
+{
+
+
+	for(var j=0;j<num;j++)
+	{
+		if(selected[j]==gas[i])
+		{
+			c++;
+		}
+	}
+}
+if(c>0)
+{
+max.push(c);
+result=result+"Gastritis, You have "+c+" symptoms matched for Gastritis"+"<br> Common Medicine for Gastritis is: Pepto-Bismol"+"<br>";
+disease.push("Gastritis");
+medicine.push("Pepto-Bismol");
+	c=0;
+}
+
+for(var i=0;i<cough.length;i++)
+{
+
+
+	for(var j=0;j<num;j++)
+	{
+		if(selected[j]==cough[i])
+		{
+			c++;
+		}
+	}
+}
+if(c>0)
+{
+max.push(c);
+result=result+"Cough and Cold or Viral Fever , You have "+c+" symptoms matched for Cough and Cold or Viral Fever"+"<br> Common Medicine for Cough and Cold is: Honeytus , decongestants, Karvol Plus"+"<br> Common Medicine for Viral Fever is: ibuprofen"+"<br>";
+disease.push("Cough and Cold or Viral Fever");
+medicine.push("Honeytus");
+medicine.push("decongestants");
+medicine.push("Karvol Plus");
+medicine.push("ibuprofen");
+	c=0;
+}
+
+for(var i=0;i<migraine.length;i++)
+{
+
+
+	for(var j=0;j<num;j++)
+	{
+		if(selected[j]==migraine[i])
+		{
+			c++;
+		}
+	}
+}
+if(c>0)
+{
+max.push(c);
+result=result+"Migraine, You have "+c+" symptoms matched for Migraine"+"<br> Common Medicine for Migraine is: Triptans"+"<br>";
+disease.push("Migraine");
+medicine.push("Triptans");
+	c=0;
+}
+
+for(var i=0;i<conjunctivitis.length;i++)
+{
+
+
+	for(var j=0;j<num;j++)
+	{
+		if(selected[j]==conjunctivitis[i])
+		{
+			c++;
+		}
+	}
+}
+if(c>0)
+{
+max.push(c);
+result=result+"Conjunctivitis, You have "+c+" symptoms matched for Conjunctivitis"+"<br> Common Medicine for Conjunctivitis is: Bleph(eye drop)"+"<br>";
+disease.push("Conjunctivitis");
+medicine.push("Bleph(eye drop)");
+	c=0;
+}
+
+
+
+for(var i=0;i<infection.length;i++)
+{
+
+
+	for(var j=0;j<num;j++)
+	{
+		if(selected[j]==infection[i])
+		{
+			c++;
+		}
+	}
+}
+if(c>0)
+{
+max.push(c);
+result=result+"Infection, You have "+c+" symptoms matched for Infection"+"<br> Common Medicine for Infection is: Ciprofloxacin <br> The medicine depends on the type of infection, do consult a doctor"+"<br>";
+disease.push("Infection");
+medicine.push("Ciprofloxacin");
+	c=0;
+}
+
+
+
+for(var i=0;i<asthma.length;i++)
+{
+
+
+	for(var j=0;j<num;j++)
+	{
+		if(selected[j]==asthma[i])
+		{
+			c++;
+		}
+	}
+}
+if(c>0)
+{
+max.push(c);
+result=result+"Asthma, You have "+c+" symptoms matched for Asthma"+"<br> Common Medicine for Asthma is: Corticosteroids(Inhaler)"+"<br>";
+disease.push("Asthma");
+medicine.push("Corticosteroids(Inhaler)");
+	c=0;
+}
+
+var l=0;
+for(var i=0;i<max.length;i++)
+{
+
+ if(max[i]>l)
+ {
+ var l=max[i];
+
+ }
+
+}
+var major_dis=" ";
+var major_diseases="";
+for(var i=0;i<max.length;i++)
+{
+  if(l==max[i])
+	{
+		major_dis=major_dis+disease[i]+" , ";
+		major_diseases=major_diseases+disease[i]+",";
+	}
+}
+major=major+"<b>THE PREDICTABLE DISEASES=> </b><br>"+major_dis+" has most number of symptoms matcheched (i.e "+l+" symptoms)<br>";
+
+document.getElementById("checkup_info").innerHTML="<b>YOUR DETAILS=> </b><br>"+"Full Name=> "+name_val+"<br>"+"Email=> "+email_val+"<br>"+"Phone Number=> "+phno_val+"<br>"+"Age=> "+age_val+"<br>"+"height=> "+height_val+"<br>"+"weight=> "+weight_val+"<br>"+"<br><b>YOUR BODY MASS INDEX=> </b><br>"+bmi+" kg/m^2"+"<br>"+"<br><b>SYMPTOMS=></b> <br>"+selected+"<br>"+
+"<br><b>THE DISEASES RELATED TO YOUR SYMPTOMS SEARCHED=></b> <br>"+result+
+"<br><br>"+major+"<br><b> CONSULT A DOCTOR FOR THESE DISEASES IN PRESCRIPTION.</b>";
+document.getElementById("bmi").value = bmi;
+var k="",m="",match="";
+
+for(var i=0;i<disease.length;i++)
+{
+   
+    k=k+disease[i]+",";
+    
+ 
+}
+for(var i=0;i<medicine.length;i++)
+{
+   
+    m=m+medicine[i]+",";
+    
+ 
+}
+for(var i=0;i<max.length;i++)
+{
+   
+    match=match+max[i]+",";
+    
+ 
+}
+
+  document.getElementById('disease').value=k; 
+   document.getElementById('med').value=m;  
+    document.getElementById('major_dis').value=major_diseases;
+    document.getElementById('matched').value=max;
+        document.getElementById('max_matched').value=l;
+			
+}
+}
+}
+
+
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<header>
+	    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+	            <a class="navbar-brand" href="../home.html">
+	                <img src="DBMS_logo_final.png" height="60px" width="60px" alt="ICARE ORGANISATION"></img>
+	                <a href="../home.html" style="color: white; text-decoration: none;">ICare Organization</a>
+	            </a>
+
+	            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+	                </li>
+	                <li class="nav-item dropdown">
+	                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                    Our Modules
+	                  </a>
+	                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	                    <a class="dropdown-item" href="../Environment Management/home.html">Environment</a>
+	                    <a class="dropdown-item" href="home_page.html">Health Care</a>
+	                    <a class="dropdown-item" href="../Donation/donation-homepage.html">Donation</a>
+	                    <a class="dropdown-item" href="../mini_store/store.html">Mini Store</a>
+	                  </div>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html#aboutus">About Us</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html#team">Our Team</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html#contactus">Contact Us</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../dashboardCheck.php">Dashboard</a>
+	                </li>
+	            </ul>
+	            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+	                <li>
+	                    <a class="nav-link" href="../index.html" style="font-weight: bold; font-size: 20px;">Logout <span><i class="fas fa-sign-out-alt"></i></span></a>
+	                </li>
+	            </ul>
+	        </div>
+	    </nav>
+	</header>
+
+
+<!-- <br><br><br><br> -->
+
+<!-- SIDE BAR -->
+
+<!-- <aside class="link">
+  <p> Menu </p>
+  <a  href="javascript:void(0)">
+    <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+    BLOOD DONATION
+  </a>
+  <a href="javascript:void(0)">
+    <i class="fa fa-ribbon" aria-hidden="true"></i>
+    PLASMA DONATION
+  </a>
+  <a href="javascript:void(0)">
+    <i class="fa fa-hands-helping" aria-hidden="true"></i>
+    OTHER DONATION
+  </a>
+
+</aside> -->
+
+
+
+
+		<!-- SIDEBAR -->
+
+
+
+
+		<!-- <div class="container"> -->
+
+      <!-- <div class="row"> -->
+
+<!--
+        <div class="col-auto"> -->
+
+
+
+				  <!-- </div>
+			</div>
+			</div> -->
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+ <div class="row">
+	 <div class="col-auto">
+		 <div class="nav">
+			 <ul class="nav__list">
+			<a href="home_page.html">
+				<li class="nav__list__items home active">
+						 <i class="fas fa-home"></i>
+					 </li>
+			</a>
+			<a href="general_checkup.html">
+				<li class="nav__list__items stats">
+					<i class="fas fa-stethoscope"></i>
+				</li>
+			</a>
+      <!-- <a href="plasma_donation.html">
+				<li class="nav__list__items leaderboard">
+					<i class="fas fa-ribbon"></i>
+				</li>
+			</a>
+        <a href="other_donation.html">
+				 <li class="nav__list__items social">
+					 <i class="fas fa-hands-helping"></i> -->
+				 </li>
+        </a>
+				 </li>
+			 </ul>
+		 </div>
+	 </div>
+ </div>
+
+
+		  <div class="row">
+       <div class="col">
+       	<div class="testimotionals">
+				  <div class="card">
+				    <div class="layer">
+
+				    </div>
+				    <div class="content1">
+				      <p></p>
+				<div id="pdf">
+					<div class="image">
+						 <img align="center" width="100px" style="margin-left:-6px" src="https://i.ibb.co/w0WDnYF/DBMS-logo-final.png" alt=""><b style="color:#7a0217; font-family:monospace; font-size:25px"><u>PRESCRIPTION FROM ICARE ORGANISATION WEBSITE</u></b></img>
+            					 <!-- <h2 style="color:white"><b>PRESCRIPTION FROM ICARE ORGANISATION WEBSITE</b></h2> -->
+					 </div>
+
+					 <p><b>Recently due to Covid19 make sure you reach out to a doctor if you have symptoms mentioned in the file alongside <a href="https://www.mediafire.com/file/v68bu3v13jlr1r8/Covid+Symptoms.txt/file">(Covid Symptoms)</a></b></p>
+				  <b><p id="checkup_info">
+
+				  </p></b>
+				</div>
+     
+        
+       
+       	<button type="button" id="but" class="button" name="button" onclick="checkup_info()">Click here for checkup</button>
+   
+				<button class="button" onclick="printDiv('pdf','Prescription')">Download prescription</button>
+				<h3 style="color:red"><b>Make Sure you complete the checkup first and then download the prescription before submitting the form</b>.</h3>
+				<!-- <button class="button" onclick="saveDiv('pdf','Title')">save div as pdf</button></p> -->
+
+				      <!-- <div class="details">
+				        <h2> Someone famous <br> <span>Website designer</span></h2>
+				      </div> -->
+				    </div>
+				  </div>
+				</div>
+      </div>
+
+
+
+
+
+    <div class="col">
+			<!-- FORM -->
+			<form class="" action="general_checkup.php"method="post" >
+		<div class="box">
+			<div class="header"><i class="fas fa-stethoscope" aria-hidden="true">&nbsp GENERAL CHECKUP DETAILS</i>
+			<!-- <p class="header">Flapjacks on a <a href="#">sunny warm</a> afternoon.</p> -->
+
+				<p class="hidden">Thanks!</p>
+			</div>
+			<div class="form">
+				   <h2 align="center">All measurments are in standard units</h2>
+									<h2 style="color:black"><b>Make Sure you complete the checkup first and then download the prescription before submitting the form</b>
+									<br>	<b style="color:red">In this Check up Eight most common minor diseases are predicted in general.(according to symptoms given)</b>
+									</h2>
+			<input type="name" id="name" name="full_name"placeholder="Full Name" minlength="2" maxlength="32" title="According the ISO minimum name length=2 and maximum=32 and no digits and special characters" class="field" style="width:200px; margin-left:-10px" pattern="[A-Za-z\s]{2,32}" required>
+				<input type="email" id="email" name="email" placeholder="Email" class="field" style="width:200px;margin-top:-50px;margin-left:250px" required>
+					<input type="tel" id="phno" name="phno" placeholder="Phone Number" class="field"  pattern="[7-9]{1}[0-9]{9}" style="width:200px; margin-left:-10px" required>
+							<input type="number" id="age" name="age" min="5" max="150" placeholder="Age" title="age (5 to 150)"  class="field" style="width:200px;margin-top:-50px;margin-left:250px" required>
+							 <input type="number" id="height" name="height" min="2" max="15"   title="height in ft (2ft to 15ft)" placeholder="Height" class="field" style="width:200px; margin-left:-10px" required>
+										<input type="number" id="weight" name="weight" min="5" max="1000" placeholder="Weight"  title="Weight in kg (5kg to 1000kg)" class="field" style="width:200px;margin-top:-50px;margin-left:250px" required>
+                     	<label type="text" name="symp_label" value="" class="field" for="symptoms" style="width:200px; margin-left:-10px" >Select Your Symptoms</label>
+										<select class="field" name="symptoms[]" id="symptoms" style="margin-top:20px" multiple>
+											<option class="field" value="Stomach ache">Stomach ache</option>
+										 <option class="field" value="Head ache">Head ache</option>
+										 <option class="field" value="Vomitting">Vomitting</option>
+                      <option class="field" value="Chest pressure">Chest pressure</option>
+											<option class="field" value="Breathlessness">Breathlessness</option>
+											<option class="field" value="Fast Heartbeat">Fast Heartbeat</option>
+											<option class="field" value="Cough">Cough</option>
+											<option class="field" value="Itching or pain">Itching or pain</option>
+											<option class="field" value="Rashes or Chills">Rashes or Chills</option>
+												<option class="field" value="Sneezing">Sneezing</option>
+													<option class="field" value="Running Nose">Running Nose</option>
+											 <option class="field" value="Fever">Fever</option>
+												<option class="field" value="Sour throat">Sour throat</option>
+											 <option class="field" value="Loose Motion">Loose Motion</option>
+												<option class="field" value="Bloating">Bloating</option>
+												<option class="field" value="Nausea">Nausea</option>
+												<option class="field" value="Loss of Appetite">Loss of Appetite</option>
+												<option class="field" value="Pink or Red eyes">Pink or Red eyes</option>
+												<option class="field" value="Swollen eyes">Swollen eyes</option>
+												<option class="field" value="Increased tears">Increased tears</option>
+												<option  class="field" value="Irritation in eye">Irritation in eye</option>
+												</select>
+												
+								 <input type="hidden" id="bmi" name="bmi" value=""class="field" style="width:200px; margin-left:-10px">
+								 <input type="hidden" id="disease" name="disease" value=""class="field" style="width:200px; margin-left:-10px">
+								 <input type="hidden" id="med" name="medicine" value=""class="field" style="width:200px; margin-left:-10px">
+								  <input type="hidden" id="major_dis" name="major_dis" value=""class="field" style="width:200px; margin-left:-10px">
+								  <input type="hidden" id="matched" name="matched" value=""class="field" style="width:200px; margin-left:-10px">
+								  <input type="hidden" id="max_matched" name="max_matched" value=""class="field" style="width:200px; margin-left:-10px">
+										<!-- <input type="number" name="protien" min="50" max="80" title="daily diet protein of donar should be in between 50 to 80 grams"placeholder="daily diet protien(estimate)" class="field"  required>
+										 <input type="number" name="temp" placeholder="Body Temperature" min="36" max="37" title="For donating the body temperature should be normal i.e(36 to 37degree celcius)"class="field" style="width:200px; margin-left:-10px" required>
+											<input type="text" name="location"placeholder="Location" title="Give a valid location"class="field" style="width:200px;margin-top:-50px;margin-left:250px" required>
+											<input type="text" name="suff"  value="" placeholder="Suffering from any transmittable disease?" class="field" disabled>
+												<label class="field" name="suffring" for="Suffering" style="width:200px; margin-left:-10px">Suffering</label>
+											<input type="radio" name="loc" value="Suffering"   id="suffering" class="field" style="width:50px;margin-top:-30px;margin-left:250px" required>
+
+											<label type="text" name="healthy" value="" class="field" for="Healthy" style="width:200px; margin-left:-10px" >Healthy</label>
+								<input type="radio" name="loc"  value="Healthy" id="healthy" class="field" style="width:50px;margin-top:-30px;margin-left:250px">
+								<input type="text" name="suff" value="" placeholder="Suffered from Covid19?" class="field" disabled style="margin-top:40px">
+																													<label class="field" name="suffer" for="Suffered" style="width:200px; margin-left:-10px">Suffered</label>
+								<input type="radio" name="lock" value="Suffered"   id="suffered" class="field" style="width:50px;margin-top:-30px;margin-left:250px" required>
+
+								<label type="text"  value="" name="not_suff"class="field" for="Not Suffered" style="width:200px; margin-left:-10px" >Not Suffered</label>
+					<input type="radio" name="lock"  value="Not Suffered" id="not suffered" class="field" style="width:50px;margin-top:-30px;margin-left:250px">
+					<input type="text" name="blood_group" value="" placeholder="Blood Group" title="Blood group should be valid"class="field" disabled style="width:200px;margin-top: 40px;margin-left:-10px">
+					<select class="field" name="Blood group" id="group" style="margin-top:20px">
+						<option class="field" value="A+">A+</option>
+					 <option class="field" value="B+">B+</option>
+					 <option class="field" value="AB+">AB+</option>
+
+						<option class="field" value="O+">O+</option>
+						 <option class="field" value="A-">A-</option>
+							<option class="field" value="B-">B-</option>
+						 <option class="field" value="AB-">AB-</option>
+							<option class="field" value="O-">O-</option>
+							</select> -->
+
+
+			<input type="submit" value="Submit" class="button"  >
+			
+
+			</div>
+		</div>
+		</form>
+	</div>
+</div>
+
+
+
+<div class="row">
+	<div class="col-12">
+		<h1 align="center" style="margin-top:100px; font-size:50px; color:white"><b><u>STEPS TO STAY HEALTHY</u></b></h1>
+<section style="margin-top:200px;">
+
+		<article>
+
+			<figure>
+				<h1><b>Drink more water</b></h1>
+
+			</figure>
+			<img class="img"alt src='https://media.giphy.com/media/ksNc3DpgrXoVbfm55o/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+				<h1><b>Experiment with protein</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/XSVq1B5FTMSheWg10r/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+				<h1><b>Find physical activity</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/Lrge8fr6HFydZqahbw/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+     <h1><b> Develop a spiritual practice</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/IiGRuNeXLRXKdtmD8u/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+			<h1><b>Get a good sleep</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/swu8UsCAnvTfJG50CM/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+				<h1><b>Give Yourself a break</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/CbdNAJeJyu6uHGraND/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+					<h1><b>Wash your hands</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/OC5Qgm5idfmVfLlVHs/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+				<h1><b>Exercise regularly</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/4XTGsckz8gzQXQKPmH/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+			<h1><b>Stay hydrated</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/hsb24DNIocEZk5LdGM/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+			<h1><b>Take vitamin C</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/VPpwIcTbukRSsycmzG/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+				<h1><b>Manage your stress</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/brYUV98E6sxlft2QtI/giphy.gif' />
+		</article>
+		<article>
+			<figure>
+			<h1><b>Prepare food safely</b></h1>
+			</figure>
+			<img alt class="img" src='https://media.giphy.com/media/guLCopvAVarMtdWIhi/giphy.gif' />
+		</article>
+  </section>
+
+
+<svg width="0" height="0">
+  <defs>
+    <clipPath id="hexagono" clipPathUnits="objectBoundingBox">
+      <polygon points=".25 0, .75 0, 1 .5, .75 1, .25 1, 0 .5" />
+    </clipPath>
+  </defs>
+</svg>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--Fotter-->
+<footer class="footer">
+	<h2 style="font-size:30px">Keep In Touch</h2>
+	<hr style="background-color: white;">
+	<div>
+	    <ul class="social-network social-circle"> 
+
+      <li><a href="https://www.facebook.com/icareorganisation123" target="_blank" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li> 
+
+			<li><a href="https://twitter.com/IcareOrganisat1" target="_blank" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> 
+
+			<li><a href="https://www.instagram.com/icareorganisation1/" target="_blank" class="icoGoogle" title="Instagram"><i class="fab fa-instagram"></i></a></li> 
+
+    </ul> 
+	</div>
+	<br>
+	<h5><a style="color: blue;">Copyright ICare © 2019-2022. All Rights Reserved.</a></h5>
+</footer>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

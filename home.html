@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> ICare Organization </title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+  <link rel = "icon" href =  "DBMS_logo_final.png" type = "image/x-icon"> 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+      window.onload = function() {
+        document.body.style.zoom = "90%";
+        changeLink();
+      }
+
+      function changeLink() {
+      $(".navbar-nav a").on("click", function(){
+        $(".navbar-nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+      });
+    }
+        
+  
+    </script>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="home.html">
+                <img src="DBMS_logo_final.png" height="60px" width="60px" alt="ICARE ORGANISATION"></img>
+                <a href="home.html" style="color: white; text-decoration: none;">ICare Organization</a>
+            </a>
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Our Modules
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="Environment Management/home.html">Environment</a>
+                    <a class="dropdown-item" href="healthcare/home_page.html">Health Care</a>
+                    <a class="dropdown-item" href="Donation/donation-homepage.html">Donation</a>
+                    <a class="dropdown-item" href="mini_store/store.html">Mini Store</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactus">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboardCheck.php">Dashboard</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li>
+                    <a class="nav-link" href="index.html" style="font-weight: bold; font-size: 20px;">Logout <span><i class="fas fa-sign-out-alt"></i></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="pattern">
+  <div class="fancy-cards">
+
+<div class="fancy-card">
+  <div class="top" style="background-image: url('images/all_logos/environment_logo.png');">
+    <div class="caption">
+      <h3 class="title">Environment</h3>
+      <a href="Environment Management/home.html" class="button">Click Here </a>
+    </div>
+  </div>
+  <div class="middle"></div>
+  <div class="bottom"></div>
+</div>
+
+<div class="fancy-card">
+  <div class="top" style="background-image: url('images/all_logos/health_care_logo.png');">
+    <div class="caption">
+      <h3 class="title">Health Care</h3>
+      <a href="healthcare/home_page.html" class="button">Click Here </a>
+    </div>
+  </div>
+  <div class="middle"></div>
+  <div class="bottom"></div>
+</div>
+
+<div class="fancy-card">
+  <div class="top" style="background-image: url('images/all_logos/donation_logo.png');">
+    <div class="caption">
+      <h3 class="title">Donation</h3>
+      <a href="Donation/donation-homepage.html" class="button">Click Here </a>
+    </div>
+  </div>
+  <div class="middle"></div>
+  <div class="bottom"></div>
+</div>
+
+<div class="fancy-card">
+  <div class="top" style="background-image: url('images/all_logos/mini_store_logo.png');">
+    <div class="caption">
+      <h3 class="title">Mini Store</h3>
+      <a href="mini_store/store.html" class="button">Click Here </a>
+    </div>
+  </div>
+  <div class="middle"></div>
+  <div class="bottom"></div>
+</div>
+
+</div>
+</section>
+
+<br id="aboutus"><br><br><br>
+
+<div class="circular">
+</div>
+<div class="circular1">	
+	<div class="headingAboutus">
+		<h1><i class='fas fa-building' style='color:white;'>&nbsp</i>About Us</h1>
+	</div>
+  <div style="padding: 20px; font-size: 20px; font-weight: bold; margin-left: 100px; text-align: justify;">
+  <p>
+    This project is for the welfare of the society. It considers - environment, health care,
+donation, sanitization related modules that manages all the social concern.</p>
+<p>
+As you know in today's world the pollution, waste management and all health
+concern are raising day by day. Our project checks and leads to the solution of these
+problems. It also focuses on the sanitization and donation to reduce poverty.
+  </p>
+</div>
+</div>
+<span id="team"></span>
+<div class="scroll">
+	<div class="heading">
+		<h1 style="color:white"><i class='fas fa-users' style='color:white;'>&nbsp</i>Our Team</h1>
+	</div>
+	<div class="circular2">
+    <table>
+      <tr>
+        <td><img class="team_img" src="images/dummy1.png" alt="Avatar" style="width:200px"></td>
+    <td><img class="team_img" src="images/dummy3.png" alt="Avatar" style="width:200px"></td>
+    <td><img class="team_img" src="images/dummy4.png" alt="Avatar" style="width:200px"></td>
+    <td><img class="team_img" src="images/dummy2.png" alt="Avatar" style="width:200px"></td>
+      </tr>
+      <tr><td><p></p></td></tr>
+      <tr style="font-size: 20px; font-weight: bold; color: white;">
+        <td style="padding-left: 126px;">Anmol Varshney</td>
+        <td style="padding-left: 136px;">Akshit Kakani</td>
+        <td style="padding-left: 128px;">Deepak Chauhan</td>
+        <td style="padding-left: 122px;">Ritwika Das Gupta</td>
+      </tr>
+    </table>
+		<!-- <img class="team_img" src="Pre-Donation-Graphicv2.jpg" alt="Avatar" style="width:200px">
+		<img class="team_img" src="Pre-Donation-Graphicv2.jpg" alt="Avatar" style="width:200px">
+		<img class="team_img" src="Pre-Donation-Graphicv2.jpg" alt="Avatar" style="width:200px">
+		<img class="team_img" src="Pre-Donation-Graphicv2.jpg" alt="Avatar" style="width:200px"> -->
+	</div>
+</div>
+<span id="contactus"></span>
+<div class="scroll1">
+					<div class="heading">
+						<h1 style="color:white; margin-top:20px"><i class='fas fa-id-card' style='color:white;  '>&nbsp</i>Contact Us</h1></div>
+<div>
+          <div  class="map"align="left">
+              <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=I%20Care%20India&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://google-map-generator.com"></a>
+								<style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+								<table>
+								  <tr>
+                    <th width='40%' style="padding-left: 10px;"><i class='fas fa-map-marker-alt' style='font-size:100px;color:white;margin-top:-70px '></i>
+                    </th>
+								    <th width='40%' style="padding-left: 15px;"><i class='fas fa-phone-square' style='font-size:100px;color:white;margin-top:-70px'></i>
+                    </th>
+                    <th width='40%' style="padding-left: 15px;"><i class='fas fa-envelope' style='font-size:100px;color:white; margin-top:-70px;'></i>
+                    </th>
+                    <tr><td><p></p></td></tr>
+							    </tr>
+                  <tr style="color: yellow;font-weight: bold; font-size: 20px;">
+                    <td style="padding-left: 5px;">Reach Us</td>
+                    <td style="padding-left: 10px;">Contact Us</td>
+                    <td style="padding-left: 20px;">Email Us</td>
+                  </tr>
+                  <tr><td><p></p></td></tr>
+                </table>
+                  <table>
+                  <tr style="color: yellow; font-size: 18px;">
+                    <td width="220px"><a target="_blank" href="https://www.google.com/maps/place/I+Care+India/@26.858193,80.997701,2886m/data=!3m1!1e3!4m5!3m4!1s0x0:0x3697ebd5f9208e00!8m2!3d26.856547!4d80.9997181?hl=en-US" style="text-decoration: none; color: orange;">ICare Centre</a></td>
+                    <td width="200px"><a href="tel:+919876543210" style="text-decoration: none; color: orange;">+91 98765 43210</a></td>
+                    <td width="200px"><a href="mailto:icareorganisation1@gmail.com" style="text-decoration: none; color: orange;">icareorganisation1@gmail.com</a></td>
+                  </tr>
+								</table>
+
+							</div>
+
+
+        </div>
+
+<div class="container">
+					  <div class="row">
+					      <div class="col-md-6">
+					          <!-- <div class="card"> -->
+					              <form class="box" action="message.php" method="post"><br>
+					                  <h2>Get in Touch With Us</h2>
+                            <br>
+														<input type="text" name="name" placeholder="Username" id="name" required>
+														<input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+														<input type="number" name="phone" id="phone" placeholder="Phone Number" required>
+														<textarea type="message" name="message" id="message" placeholder="Message" ></textarea>
+														<br><input type="submit" name=""  value="Send Message" href="#" ><br>
+					                 <div class="col-md-12">
+					                      <ul class="social-network social-circle">
+					                         <li><a href="https://www.facebook.com/icareorganisation123" target="_blank" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="https://twitter.com/IcareOrganisat1" target="_blank" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://www.instagram.com/icareorganisation1/" target="_blank" class="icoGoogle" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+					                  </div>
+					              </form>
+					          </div>
+					      <!-- </div> -->
+					  </div>
+					</div>
+				</div>
+				</div>
+
+<footer class="footer">
+	<h2>Keep In Touch</h2>
+	<hr style="background-color: white;">
+	<div class="col-md-12">
+		<ul class="social-network social-circle">
+			<li><a href="https://www.facebook.com/icareorganisation123" target="_blank" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="https://twitter.com/IcareOrganisat1" target="_blank" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://www.instagram.com/icareorganisation1/" target="_blank" class="icoGoogle" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+	</div>
+  <br>
+	<h5><a style="color: blue;">Copyright ICare © 2019-2022. All Rights Reserved.</a></h5>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

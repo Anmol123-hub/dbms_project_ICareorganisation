@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Environment Management</title>
+  <link rel="shortcut icon" href="images/DBMS_logo_final.ico" type="image/x-icon">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap 4.6.0 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Font Awesome 5.8.1 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- JavaScript -->
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+<!-- Top Button -->
+<a href="#top" id="back-to-top" title="Back to top" class="show"><i class="fas fa-arrow-up back-to-top-icon"></i></a>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="../home.html">
+                <img src="images/DBMS_logo_final.png" height="60px" width="60px" alt="ICARE ORGANISATION">
+                <a href="../home.html" style="color: white; text-decoration: none;">ICare Organization</a>
+            </a>
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Our Modules
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="home.html">Environment</a>
+                    <a class="dropdown-item" href="../healthcare/home_page.html">Health Care</a>
+                    <a class="dropdown-item" href="../Donation/donation-homepage.html">Donation</a>
+                    <a class="dropdown-item" href="../mini_store/store.html">Mini Store</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../home.html#aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../home.html#team">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../home.html#contactus">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../dashboard/userDashboard.php">Dashboard</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li>
+                    <a class="nav-link" href="../index.html" style="font-weight: bold; font-size: 20px;">Logout <span><i class="fas fa-sign-out-alt"></i></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<!-- Progress Bar -->
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+
+<!-- Slider -->
+<section class="navbarMargin">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carousel1.jpg" class="d-block w-100" alt="Environment Management">
+        <div class="centered w-100" style="font-weight:bold; text-align: center;"> <span style="color: violet;">Env</span><span style="color: indigo;">iro</span><span style="color: blue;">nme</span><span style="color: green;">nt M</span><span style="color: darkkhaki;">ana</span><span style="color: orange;">gem</span><span style="color: red;">ent</span></div>
+        <div class="centered1" style="text-align: center; border: 2px solid black; padding: 15px;">Let's Make Better Environment For Better Tomorrow <span><i class="fas fa-leaf"></i></span></div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel2.jpg" class="d-block w-100" alt="Environment Management">
+        <div class="centered w-100" style="font-weight:bold; text-align: center;"><br><span style="color: purple;">Let's ... </span> Go With <span style="color: green;">Eco Green</span><br><span style="color: purple;">To Get</span> Our <span style="color: blue;">Global Clean</span> :)</div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel3.jpg" class="d-block w-100" alt="Environment Management">
+        <div class="centered w-100" style="font-weight:bold; margin-left: 50px; text-align: left; color: blue;"><br><span style="color: green;">GO GREEN &nbsp;<span style="color: darkkhaki;"><i class="fab fa-pagelines"></i></span></span><br>There is no <span style="color: red;">Planet B</span></div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- Modules -->
+<section id="modules">
+  <div>
+    <br><br><h1 class="sectionHeading"><span><i class="fas fa-tree" style="color: green;"></i></span> <span class="effect-shine">MODULES</span> <span><i class="fas fa-tree" style="color: green;"></i></span></h1>
+  </div>
+  <div class="page-content">
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Waste Management System</h2>
+        <p class="copy">This module deals with the waste management system which helps user in differentiating types of waste & guiding the user to the nearby location for recycling. </p><button class="btn" onclick="module1()">View More</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Pollution Check System</h2>
+        <p class="copy">This module deals with the pollution check system. This helps in checking the real-time Air Quality Index of the user's entered location.</p><button class="btn" onclick="module2()">View More</button>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+
+<!-- About Environment Management -->
+<section id="about">
+  <div>
+    <br><br><h1 class="sectionHeading" style="color: black; text-align: center;"><span class="effect-shine">ABOUT ENVIRONMENT MANAGEMENT</span></h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 aboutContent" style="backdrop-filter: blur(1px); padding: 25px; font-weight: bold; text-align: center;">
+        <p>The environment plays a significant role to support life on earth. But there are some issues that are causing damages to life and the ecosystem of the earth.</p>
+        <p>The first module deals with the waste management system which helps user in differentiating between various type waste and managing them and guiding the user to the nearby location where he/she can recycle them.</p>
+        <p>The second module deals with the pollution management system. This helps in calculating the level of pollution (Air Quality Index and Air Quality Forecast) in the atmosphere of user’s nearby location.</p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 aboutImage" style="padding: 25px; text-align: right;">
+        <img src="images/forest1.jpg" width="100%" style="align-items: center;" class="borderImage">
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+
+<!-- Our Goal -->
+<section id="ourGoal">
+  <div>
+    <br><br><h1 class="sectionHeading" style="color: black; text-align: center;"><span><i class="fab fa-envira" style="color: green;"></i></span> <span class="effect-shine">OUR GOAL</span></h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 aboutContent" style="padding: 25px; font-weight: bold; text-align: center;">
+        <h4 style="font-weight: bold; color: #AE0404; font-family: 'Franklin Gothic Medium';">Recycling Waste</h4>
+        <br>
+        <p id="one">“There are few things certain in life – one is death, second is change and the other is waste.”
+        <br>No one can stop these things to take place in our lives. But with better management we can prepare ourselves.
+        <br>Recycling is a key component of waste reduction & is the third component of "Reduce, Reuse & Recycle"<span id="dots1">...</span><span id="more1" style="display: none;"> waste hierarchy.
+        <br>Thus, recycling aims at environmental sustainability by substituting raw material inputs into and redirecting waste outputs out of the economic system.</span><span onclick="ReadMore1()" id="myBtn1" style="color:#AE0404; cursor:pointer;">Read More</span></p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 aboutContent goal2" style="padding: 25px; font-weight: bold; text-align: center;">
+        <h4 style="font-weight: bold; color: #AE0404; font-family: 'Franklin Gothic Medium';">Awareness On Pollution</h4>
+        <br>
+        <p id="one">Environmental awareness is to understand the fragility of our environment and the importance of its protection.
+        <br>Promoting environmental awareness is an easy way to become an environmental steward and participate in creating a brighter future for our children.
+        <br>Air pollution is the leading environmental<span id="dots2">...</span><span id="more2" style="display: none;"> toxin. It is 50 times greater than the WHO recommended level. Accurate, timely information can be a powerful tool to mitigate harmful effects of air pollution.</span><span onclick="ReadMore2()" id="myBtn2" style="color:#AE0404; cursor:pointer;">Read More</span></p>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+
+<!-- Interesting Facts -->
+<section id="facts">
+  <div>
+    <br><br><h1 class="sectionHeading" style="color: black; text-align: center;"><span class="effect-shine">INTERESTING FACTS</span> <span><i class="far fa-laugh-beam" style="color: green;"></i></span></h1>
+  </div>
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4 wow fadeInUp">
+      <div class="about-col">
+        <div class="img">
+          <img src="images/paperWaste.jpg" alt="" class="img-fluid">
+          <div class="icon"><i class="fas fa-book"></i></div>
+        </div>
+        <h2 class="title"><a class="effect-underline" style="text-decoration: none; display: inline-block; position: relative;">PAPER WASTE</a></h2>
+        <p style="text-align: justify; font-weight: bold;">
+          Paper comes from trees and can be recycled a maximum of six times, after which, its fibres become too weak to hold together. It means if the daily run of any country’s popular magazine or newspaper was to be recycled, it could save about 75,000 trees.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4 wow fadeInUp">
+      <div class="about-col">
+        <div class="img">
+          <img src="images/aluminiumWaste.jpg" alt="" class="img-fluid">
+          <div class="icon"><i class="fas fa-trash-alt"></i></div>
+        </div>
+        <h2 class="title"><a class="effect-underline" style="text-decoration: none; display: inline-block; position: relative;">ALUMINIUM SCRAP</a></h2>
+        <p style="text-align: justify; font-weight: bold;">
+          Unlike paper which has a limit as to the times, it can be recycled, aluminum can be recycled forever. Recycling a can made of aluminum produces energy enough to run a television for 3 hours. Aluminum is one of the most recycled materials on the market today.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4 wow fadeInUp">
+      <div class="about-col">
+        <div class="img">
+          <img src="images/plasticWaste.jpg" alt="" class="img-fluid">
+          <div class="icon"><i class="fas fa-wine-bottle"></i></div>
+        </div>
+        <h2 class="title"><a class="effect-underline" style="text-decoration: none; display: inline-block; position: relative;">PLASTIC GARBAGE</a></h2>
+        <p style="text-align: justify; font-weight: bold;">
+          Plastic does not decompose easily either. They take up to 1000 years to decompose. When they are thrown into the water, they contribute to the deaths of thousands of marine animals, let alone plastic pollution and contaminating the water and soil.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+	<h3>Keep In Touch</h3>
+	<hr style="background-color: white;">
+	<div class="col-md-12">
+		<ul class="social-network social-circle">
+			<li><a href="https://www.facebook.com/icareorganisation123" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f" style="color: #3B5998;"></i></a></li>
+			<li><a href="https://twitter.com/IcareOrganisat1" class="icoTwitter" title="Twitter"><i class="fab fa-twitter" style="color: #33ccff;"></i></a></li>
+			<li><a href="https://www.instagram.com/icareorganisation1/" class="icoGoogle" title="Google +"><i class="fab fa-instagram" style="color: #e1306c"></i></a></li>
+		</ul>
+	</div>
+  <br>
+	<h6><a style="color: blue;">Copyright ICare © 2019-2022. All Rights Reserved.</a></h6>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>

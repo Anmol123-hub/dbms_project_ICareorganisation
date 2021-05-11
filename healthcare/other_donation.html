@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MEDICAL DONATION</title>
+	<meta charset="utf-8">
+	 <link rel = "icon" href =  "DBMS_logo_final.png" type = "image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="side_pane.css">
+    <link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
+    <link rel="stylesheet" href="blood_donation.css">
+		<link rel="stylesheet" href="card2.css">
+
+
+		<!-- <script src="jquery.js"></script> -->
+
+		<style >
+
+		</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+
+// NAVBAR
+function changeLink() {
+$(".navbar-nav a").on("click", function(){
+	$(".navbar-nav").find(".active").removeClass("active");
+	$(this).parent().addClass("active");
+});
+}
+
+
+// Form
+var button = document.querySelector('.button');
+var field = document.querySelector('.field');
+var icon = document.querySelector('.header i');
+var text = document.querySelector('.header p');
+
+button.addEventListener('click', function(){
+
+  if(field.value === ''){
+    field.placeholder = 'You must enter your email';
+    // alert('You must enter an email');
+  } else {
+    icon.classList.toggle('animation');
+    text.classList.toggle('show');
+  }
+});
+// function load(){
+// window.location.href="map.html";
+//  }
+// function Nonefunc() {
+		 // var select = document.getElementById("Medicaldonation");
+		 // var dvselect1 = document.getElementById("medicine");
+		 // var dvselect2=document.getElementById("equipment");
+
+    // if(select.value=="none")
+		// {
+		// 	alert("Select the Donation type");
+		//
+    //   	returnToPreviousPage();
+		// }
+		// else {
+		// 	window.location.href="map.html";
+		// }
+		// else{
+	 //
+		//  dvselect1.style.display = ddlPassport.value == "drugs" ? "block" : "none";
+		//  dvselect2.style.display = ddlPassport.value == "Equipments" ? "block" : "none";
+	 // }
+ // }
+
+ function ShowHideDiv() {
+        var select = document.getElementById("Medicaldonation");
+        var select1 = document.getElementById("brand1");
+				// var select2=document.getElementById("other");
+					var select3=document.getElementById("other1");
+					// if(select.value=="none")
+					// {
+					// 	alert("Select the Donation type");
+					// 	 // dvselect1.style.display="none";
+					// 	 // dvselect2.style.display="none";
+					// 		returnToPreviousPage();
+					// }
+
+        select1.style.display = select.value == "brand" ? "block" : "none";
+				//   select2.style.display = select.value == "other2" ? "block" : "none";
+						  select3.style.display = select.value == "other1" ? "block" : "none";
+							// window.location.href="map.html";
+
+
+
+    }
+
+		function req(){
+			var valid;
+			var select = document.getElementById("Medicaldonation");
+			var select1 = document.getElementById("brand1");
+// 			var select2=document.getElementById("other");
+				var select3=document.getElementById("other1");
+				if(select.value=="brand" || select.value=="other1"){
+			if(select1.value=="" && select2.value=="" && select3.value=="")
+			{
+
+					alert("fill the text box");
+        //   returnToPreviousPage();
+					valid= false;
+				}
+				else{
+
+					valid= true;
+                    returnToPreviousPage();
+					// window.location.href="map.html";
+				}
+        return valid;
+			}
+			else {
+				// window.location.href="map.html";
+                returnToPreviousPage();
+                return true;
+			}
+
+		}
+
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<header>
+	    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+	            <a class="navbar-brand" href="../home.html">
+	                <img src="DBMS_logo_final.png" height="60px" width="60px" alt="ICARE ORGANISATION"></img>
+	                <a href="../home.html" style="color: white; text-decoration: none;">ICare Organization</a>
+	            </a>
+
+	            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+	                </li>
+	                <li class="nav-item dropdown">
+	                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                    Our Modules
+	                  </a>
+	                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	                    <a class="dropdown-item" href="../Environment Management/home.html">Environment</a>
+	                    <a class="dropdown-item" href="home_page.html">Health Care</a>
+	                    <a class="dropdown-item" href="../Donation/donation-homepage.html">Donation</a>
+	                    <a class="dropdown-item" href="../mini_store/store.html">Mini Store</a>
+	                  </div>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html#aboutus">About Us</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html#team">Our Team</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html#contactus">Contact Us</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../dashboardCheck.php">Dashboard</a>
+	                </li>
+	            </ul>
+	            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+	                <li>
+	                    <a class="nav-link" href="../index.html" style="font-weight: bold; font-size: 20px;">Logout <span><i class="fas fa-sign-out-alt"></i></span></a>
+	                </li>
+	            </ul>
+	        </div>
+	    </nav>
+	</header>
+
+
+<!-- <br><br><br><br> -->
+
+<!-- SIDE BAR -->
+
+<!-- <aside class="link">
+  <p> Menu </p>
+  <a  href="javascript:void(0)">
+    <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+    BLOOD DONATION
+  </a>
+  <a href="javascript:void(0)">
+    <i class="fa fa-ribbon" aria-hidden="true"></i>
+    PLASMA DONATION
+  </a>
+  <a href="javascript:void(0)">
+    <i class="fa fa-hands-helping" aria-hidden="true"></i>
+    OTHER DONATION
+  </a>
+
+</aside> -->
+
+
+
+
+		<!-- SIDEBAR -->
+
+
+
+
+		<!-- <div class="container"> -->
+
+      <!-- <div class="row"> -->
+
+<!--
+        <div class="col-auto"> -->
+
+
+
+				  <!-- </div>
+			</div>
+			</div> -->
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+ <div class="row">
+	 <div class="col-auto">
+		 <div class="nav">
+			 <ul class="nav__list">
+			<a href="home_page.html">
+				<li class="nav__list__items home active">
+						 <i class="fas fa-home"></i>
+					 </li>
+			</a>
+			<a href="blood_donation.html">
+				<li class="nav__list__items stats">
+					<i class="fas fa-hand-holding-heart"></i>
+				</li>
+			</a>
+      <a href="plasma_donation.html">
+				<li class="nav__list__items leaderboard">
+					<i class="fas fa-ribbon"></i>
+				</li>
+			</a>
+        <a href="other_donation.html">
+				 <li class="nav__list__items social">
+					 <i class="fas fa-hands-helping"></i>
+				 </li>
+        </a>
+				 </li>
+			 </ul>
+		 </div>
+
+	 </div>
+
+ </div>
+
+		  <div class="row">
+
+
+
+
+	    <div class="col">
+		<!-- INFORMATION -->
+		<div class="card" style="width:500px; height:500px; margin-top:-30px">
+		<div class="image">
+			<img src="https://media.giphy.com/media/xUA7biF7n8LcAqh4bK/giphy.gif"/ style="height:500px">
+		</div>
+		<div class="details">
+			<div class="center">
+				<h1>CRITERIA FOR<br><span>MEDICAL DONATION</span></h1>
+				<p style="font-size:15px">For medical donation, The quantity of donation , no illegal or strong drugs are to be donated.The type of donation and the user information is manditory</p>
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+    <div class="col">
+				<!-- FORM -->
+
+     	<form class="" action="other_donation.php" method="post" >
+
+			<div class="box">
+
+			  <div class="header"><i class="fa fa-hands-helping" aria-hidden="true">&nbsp MEDICAL DONATION</i>
+				<!-- <p class="header">Flapjacks on a <a href="#">sunny warm</a> afternoon.</p> -->
+
+			    <p class="hidden">Thanks!</p>
+			  </div>
+
+			  <div class="form">
+
+      <h2 align="center">All measurments are in standard units</h2>
+			  <input type="text" name="name" placeholder="Full Name" minlength="2" maxlength="32" title="According the ISO minimum name length=2 and maximum=32 and no digits and special characters" pattern="[A-Za-z\s]{2,32}" class="field" style="width:200px; margin-left:-10px" required>
+				  <input type="email" name="email" placeholder="Email" class="field" style="width:200px;margin-top:-50px;margin-left:250px" required>
+					  <input type="tel" placeholder="Phone Number" name="phno" class="field"  pattern="[7-9]{1}[0-9]{9}" style="width:200px; margin-left:-10px" required>
+			       	  <input type="number" name="age"placeholder="Age" min="18" title="The donar should be atleast 18 years old" class="field" style="width:200px;margin-top:-50px;margin-left:250px" required>
+								  <!-- <input type="number" placeholder="Height" class="field" style="width:200px; margin-left:-10px">
+										  <input type="number" placeholder="Weight" class="field" style="width:200px;margin-top:-50px;margin-left:250px" required>
+									 <input type="text" placeholder="Blood Group" class="field" style="width:200px; margin-left:-10px">
+									 	  <input type="number" placeholder="daily diet protien(estimate)" class="field" style="width:240px;margin-top:-50px;margin-left:220px;" required>
+												<input type="number" placeholder="Body Temperature" class="field" style="width:200px; margin-left:-10px" required> -->
+
+											  <!--<input type="text" name="location" placeholder="Location" title="Give a valid location" class="field" style="width:200px; margin-left:-10px" required>-->
+												<input type="text" name="med_donation" value="" placeholder="Select the type of medical donation and its name" class="field" disabled>
+												<select class="field" name="med_select" title="Select the Type of Medical donation" id="Medicaldonation" onchange="ShowHideDiv()"  style="width:200px; margin-left:-10px; margin-top:20px" required>
+                           <option class="field" value="">None</option>
+													 <option class="field" value="brand">Sanitizer</option>
+													<optgroup label="Medicines">
+													 <option class="field" value="paracetamol">Paracetamol</option>
+													 <option class="field" value="Disprin">Disprin</option>
+													 <option class="field" value="Silver X">Silver X</option>
+													 <option class="field" value="paracetamol">Anti-inflammatory painkillers</option>
+													 <option class="field" value="painkillers">Antacids</option>
+													  <option class="field" value="cream">Hydrocortisone cream</option>
+														<option class="field" value="Antiseptic">Antiseptic cream</option>
+													  </optgroup>
+														  <optgroup label="Medical Equipments">
+ 												 <option class="field" value="Syringe">Syringe</option>
+												 <option class="field" value="gloves">Medical gloves</option>
+												 <option class="field" value="Stethoscope">Stethoscope</option>
+												 <option class="field" value=" blood pressure monitor"> blood pressure monitor</option>
+												 	 <option class="field" value="Inhaler ">Inhaler </option>
+													 	 	 <option class="field" value="other1">Other</option>
+											 </optgroup>
+                         <optgroup label="Masks">
+                         	<option class="field" value="Cotton">Cotton Masks</option>
+													   	<option class="field" value="Silk">Silk Masks</option>
+																<option class="field" value="Plastic">Plastic Masks</option>
+																<option class="field" value="other1">Other</option>
+                         </optgroup>
+
+
+                            </select>
+
+																<!-- <select class="field" name="cars" id="equipment" onload="load()"style="width:300px; margin-left:-10px; margin-top:20px">
+																	<option class="field" value="d">Med</option>
+																 <option class="field" value="E">Medical Equipments</option>
+																 <option class="field" value="masks">Masks</option>
+																 <option class="field" value="sanitizer">Sanitizer</option>
+																		</select>  -->
+															<input type="text" name="other1" id="other1" placeholder="Please specify your donation" class="field" style="display:none"  pattern="[A-Za-z\s]+">
+															<!--<input type="text" name="other" id="other"  placeholder="Please specify the name of medical equipment (letters only)" class="field" style="display:none" pattern="[A-Za-z\s]+">-->
+                             <input type="text" id="brand1" name="brand1" placeholder="Please specify the brand Of the Sanitizer (letters only)" class="field" style="display:none" pattern="[A-Za-z\s]+">
+                            <input type="number" name="quantity" placeholder="Quantity of donation" min="1" title="Fill the quanitity of medical donation in standard units" class="field"  required>
+
+
+												<!-- <input type="text" name="" value="" placeholder="Suffering from any transmittable disease?" class="field" disabled>
+                         																					<label class="field" for="Suffering" style="width:200px; margin-left:-10px">Suffering</label>
+                        <input type="radio" name="loc" value="Suffering"   id="suffering" class="field" style="width:50px;margin-top:-30px;margin-left:250px">
+
+												<label type="text"  value="" class="field" for="Healthy" style="width:200px; margin-left:-10px" >Healthy</label>
+									<input type="radio" name="loc"  value="Healthy" id="healthy" class="field" style="width:50px;margin-top:-30px;margin-left:250px">
+									<input type="text" name="" value="" placeholder="Suffered from Covid19?" class="field" disabled style="margin-top:40px">
+																														<label class="field" for="Suffered" style="width:200px; margin-left:-10px">Suffered</label>
+									<input type="radio" name="loc" value="Suffered"   id="suffered" class="field" style="width:50px;margin-top:-30px;margin-left:250px">
+
+									<label type="text"  value="" class="field" for="Not Suffered" style="width:200px; margin-left:-10px" >Not Suffered</label>
+						<input type="radio" name="loc"  value="Not Suffered" id="not suffered" class="field" style="width:50px;margin-top:-30px;margin-left:250px"> -->
+
+			  <input type="submit" value="Submit" class="button" onclick=" req(); return false" >
+
+			  </div>
+
+
+			</div>
+			</form>
+		</div>
+</div>
+
+
+
+<section class="bg-primary text-center">
+
+  <div class="row">
+			<!-- <h1 style="margin-top:20px; color:white; margin-left:550px;max-width:100%" align="center">IMPORTANCE OF DONATION</h1> -->
+<div class="container1">
+
+	<div class="col-6 col-sm-3">
+
+  <div class="card1">
+    <div class="face face1">
+      <div class="content1">
+        <h2>	<i class="fas fa-hand-holding-heart">&nbsp</i>BLOOD DONATION</h2>
+        <p  style="font-size:15px">An adequate amount of blood is needed in all health care facilities to meet the urgent need for patients facing trauma and other lifesaving procedures, such as blood transfusions – which saves millions of lives each year.</p>
+        <!-- <a href="#">Read More</a> -->
+      </div>
+    </div>
+    <div class="face face2" style="color:white">
+
+      <h2 >		<i class="fas fa-hand-holding-heart">&nbsp</i>BLOOD</h2>
+    </div>
+  </div>
+</div>
+  <div class="col-6 col-sm-3">
+
+
+  <div class="card1">
+    <div class="face face1">
+      <div class="content1">
+        <h2><i class="fas fa-ribbon">&nbsp</i>PLASMA DONATION</h2>
+        <p  style="font-size:15px">Plasma plays the critical role of maintaining a healthy blood pressure, blood volume and a proper pH balance. Without plasma, our body would not be supplied with many of the proteins that are necessary to support blood clotting and our immune system responses </p>
+        <!-- <a href="#">Read More</a> -->
+      </div>
+    </div>
+    <div class="face face2" style="color:white">
+      <h2><i class="fas fa-ribbon">&nbsp</i>PLASMA</h2>
+    </div>
+  </div>
+	  </div>
+		<div class="col-6 col-sm-3">
+
+  <div class="card1">
+    <div class="face face1">
+      <div class="content1">
+        <h2>	 <i class="fas fa-hands-helping">&nbsp</i>MEDICAL DONATION</h2>
+        <p style="font-size:15px">Donating to the causes you care about not only benefits the charities themselves, it can be deeply rewarding for you too. Millions of people give to charity on a regular basis to support causes they believe in, as well as for the positive effect it has on their own lives. </p>
+        <!-- <a href="#">Read More</a> -->
+      </div>
+    </div>
+    <div class="face face2" style="color:white">
+      <h2>	 <i class="fas fa-hands-helping">&nbsp</i>OTHER</h2>
+    </div>
+  </div>
+
+			</div>
+</div>
+</div>
+</section>
+</div>
+
+
+
+
+
+
+<!--Fotter-->
+<footer class="footer">
+	<h2 style="font-size:30px">Keep In Touch</h2>
+	<hr style="background-color: white;">
+	<div class="col-md-12">
+		<ul class="social-network social-circle"> 
+
+      <li><a href="https://www.facebook.com/icareorganisation123" target="_blank" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li> 
+
+			<li><a href="https://twitter.com/IcareOrganisat1" target="_blank" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> 
+
+			<li><a href="https://www.instagram.com/icareorganisation1/" target="_blank" class="icoGoogle" title="Instagram"><i class="fab fa-instagram"></i></a></li> 
+
+    </ul> 
+	</div>
+	<br>
+	<h5><a style="color: blue;">Copyright ICare © 2019-2022. All Rights Reserved.</a></h5>
+</footer>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

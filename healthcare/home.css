@@ -1,0 +1,856 @@
+/* and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) { */
+html,
+    body {
+      height: 100%;
+      background-color: #4dd2f7;
+      width:100%;
+         max-width: 100%;
+    }
+
+
+    .wrapper {
+      height: 100%;
+      font-family: Helvetica, sans-serif;
+      line-height: 1.5;
+      word-spacing: 2px;
+      letter-spacing: 0.5px;
+    }
+    .fixed {
+      /* background-attachment: fixed; */
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-position: center center; */
+      height:100%;
+      width: 100%;
+      color: #eeeeee;
+      text-align: center;
+      display: table;
+       max-width: 100%;
+    }
+    .fixed h2 {
+      display: table-cell;
+      vertical-align: middle;
+         max-width: 100%;
+    }
+    .scroll {
+
+      background-image: linear-gradient(-70deg,
+  #1888f0 30%,#02194d 100%);
+      padding: 10px 70px;
+      color: #666666;
+      height: 500px;
+       max-width: 100%;
+    }
+    .scroll1 {
+
+      background-image: linear-gradient(-70deg,
+#1888f0 30%,#02194d 100%);
+      padding: 10px 70px;
+      color: #666666;
+      height: 500px;
+       max-width: 100%;
+    }
+    .one {
+      background-image: url("waves.png")
+
+    }
+    .two {
+      background-image: url("background2.jpg")
+    }
+    .three {
+      background-image: url("background3.jpg")
+    }
+
+
+    .navbar-custom {
+      background-color: #150080;
+        border-color: #425766;
+        background-image: linear-gradient(360deg,#2300e6 0%,#100357 100%);
+      font-size: 20px;
+    }
+
+    .navbar-nav {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .navbar-nav .nav-item {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    /*.navbar-custom .nav-item.active .nav-link,
+    .navbar-custom .nav-item:hover .nav-link {
+        border-bottom: 3px solid red;
+        color: white;
+    }*/
+
+    .navigation{
+      margin-top: 10px;
+    }
+    .a{
+      margin-top: 10px;
+    }
+
+.circular {
+width: 300px;
+height: 300px;
+margin-top: 90px;
+margin-left: 1050px;
+border-radius: 150px;
+-webkit-border-radius: 150px;
+-moz-border-radius: 150px;
+float:right;
+
+	/* background: url("https://d1nakyqvxb9v71.cloudfront.net/wp-content/uploads/2020/01/Heart-Thumbnai-500x333.gif") no-repeat; */
+box-shadow: 0 0 100px #ff0000;
+-webkit-box-shadow: 0 0 100px #ff0000;
+-moz-box-shadow: 0 0 100px #ff0000;
+ max-width: 100%;
+}
+.circular1 {
+  width: 1360px;
+  height: 300px;
+ margin-top: 90px;
+ margin-left: 10px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background-color: #fae87f;
+  background-image: linear-gradient(-70deg,
+#370052 30%,#c66df2 100%);
+  box-shadow: 0 0 30px #ffffff;
+  -webkit-box-shadow: 0 0 30px #ffffff;
+  -moz-box-shadow: 0 0 30px #ffffff;
+   max-width: 100%;
+  }
+  .circular2 {
+  width: 300px;
+  height: 300px;
+  margin-top: 90px;
+  margin-left: 10px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  float:left;
+
+  /*	background: url(https://d1nakyqvxb9v71.cloudfront.net/wp-content/uploads/2020/01/Heart-Thumbnai-500x333.gif) no-repeat;*/
+  box-shadow: 0 0 100px #ff0000;
+  -webkit-box-shadow: 0 0 100px #ff0000;
+  -moz-box-shadow: 0 0 100px #ff0000;
+   max-width: 100%;
+  }
+  .circular3 {
+    width: 1360px;
+    height: 300px;
+   margin-top: 90px;
+   margin-left: 10px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+
+
+background-image: linear-gradient(-70deg,
+#c66df2 30%,#370052 100%);
+box-shadow: 0 0 30px #ffffff;
+-webkit-box-shadow: 0 0 30px #ffffff;
+-moz-box-shadow: 0 0 30px #ffffff;
+ max-width: 100%;
+    }
+
+
+
+
+       /*Slide Show*/
+
+       *, *::before, *::after {
+       box-sizing: border-box; /* Too much math below to be concerned with standard CSS Box Model element dimensions calculations. Let's not have to account for padding/margins/borders on anything here. */
+     }
+
+    /* body {
+       margin: 0;
+       background-image: url('http://www.desktopwallpaperhd.net/wallpapers/18/d/andromeda-space-background-computer-images-187549.jpg');
+       background-attachment: fixed;
+       background-size: cover;
+     }*/
+
+     .h1 {
+       margin: 0 0 30px 0;
+       padding: 20px;
+       background-color: rgba(20,20,20,0.9);
+       color: #fff;
+       text-align: center;
+       font-family: Arial;
+       text-transform: uppercase;
+       box-shadow: 0 0 20px -1px #efefef;
+     }
+
+     .carousel_wrapper {
+       position: relative;
+       width: 320px;
+       margin: 100px auto 0 auto;
+       perspective: 1000px;
+     }
+
+     .carousel {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       transform-style: preserve-3d;
+       transform: rotateY(-360deg) translateZ(-412px); /* add reverse transformation from the slides */
+       animation: swirl 40s steps(10000, end) infinite; /* run `swirl` animation (defined at end of CSS) infitely, with animation lasting 40 seconds, and 10,000 steps between the FROM and TO values in the animation for a smooth rotation */
+     }
+
+     .slide {
+       position: absolute;
+       top: 10px;
+       left: 10px;
+       width: 300px;
+       height: 187px;
+     }
+
+     .slide img {
+       width: 280px;
+       height: 175px;
+       border: 3px inset rgba(47, 115, 201, 0.75);
+       box-shadow: 0 0 15px 3px rgba(110, 72, 221, 0.9);
+     }
+
+
+     /*
+     9 Slides total: 360 Degrees (full circle) --> 360/9 = 40 --> our increment for rotation
+
+     Some math. Consider how the carousel will be set up. It's going to be a 3D circle, like an orbit. The orientation will be such that it would be like setting a ring down on a table, then bending down and looking at the ring head on from the edge of the table. The main "front" image will be entirely front-facing. The other images will be rotated slightly to make a full circle. You could sketch this out in 2D from a bird's eye view, and you'd end up with a picture like the following:
+
+     https://cl.ly/image/2P3E1U0W0c29
+
+     Each triangle/piece would be a slide, hence 9 pieces. That being said, let's do some calculations, but we'll use the dimensions of our elements rather than those in the picture.
+
+     So, we're rotating all the slides in 40º increments relative to each other, because 360º makes a full circle, and we have 9 elements: 360/9 = 40
+
+     In the picture above, we want to find the radius of the circle (which isn't exactly a circle because it's made up of triangles). So we can cut each triangle in half and solve for `r` (radius). We can solve for `r` using some geometry and our own elements' dimensions.
+
+     The width of the slides is 300px. We're going to split those triangles in half and use the TANGENT function in geometry/trigonemty to solve for `r`. And since we're splitting each of the 9 triangles (the slides) in half for this, we need to account for the fact that our key angle is now going to be 20º and not 40º. We can solve for `r` by taking our smaller triangles' width (150px) and dividing by the tangent of 20º (in degrees, not radians). So:
+
+                 150
+        r =  -----------
+               tan(20º)
+
+     Here's a screenshot of me doing the calculations in JavaScript, right in the browser console!
+
+     Math things: https://cl.ly/image/1t0j1V2Y2l2Z
+
+     So, `r` is (about) 412px long! This means we need to TRANSLATE the slides in the Z 3-dimensional plane by 412px. This should be done AFTER the rotateY transformation.
+     */
+
+     .slide.one {
+       transform: rotateY(0deg) translateZ(412px);
+     }
+     .slide.two {
+       transform: rotateY(40deg) translateZ(412px);
+     }
+     .slide.three {
+       transform: rotateY(80deg) translateZ(412px);
+     }
+     .slide.four {
+       transform: rotateY(120deg) translateZ(412px);
+     }
+     .slide.five {
+       transform: rotateY(160deg) translateZ(412px);
+     }
+     .slide.six {
+       transform: rotateY(200deg) translateZ(412px);
+     }
+     .slide.seven {
+       transform: rotateY(240deg) translateZ(412px);
+     }
+     .slide.eight {
+       transform: rotateY(280deg) translateZ(412px);
+     }
+     .slide.nine {
+       transform: rotateY(320deg) translateZ(412px);
+     }
+
+     /*
+     CSS3 ANIMATION
+     -------------------
+     Simply rotates the carousel around the Y axis by using rotateY and starting at initial value, -360º, and going to final value 0º, then resetting.
+     */
+
+     @keyframes swirl {
+       from {
+         transform: rotateY(-360deg);
+       }
+       to {
+         transform: rotateY(0deg);
+       }
+     }
+
+
+     /*FOOTER*/
+     .footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #bcbec4;
+  color:#f71919;
+	height: 210px;
+	margin-top: 0px;
+}
+p.footer{
+	color:#f71919;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+    color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s
+}
+
+.social-circle i {
+    color: #fff;
+    transition: all 0.8s;
+    transition: all 0.8s
+}
+
+
+/*MIDDLE SLIDE*/
+
+
+.card-list {
+  list-style: none;
+margin:0;
+margin-left: 140px;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+.product-container{
+  position: relative;
+  margin-top: 20px;
+
+}
+.card {
+  position: fixed;
+  width: 300px;
+  height: 450px;
+
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 5px;
+  box-shadow: 0 0 30px #fc0000;
+  -webkit-box-shadow: 0 0 30px #fc0000;
+  -moz-box-shadow: 0 0 30px #fc0000;
+
+}
+.card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--product-color);
+  clip-path: circle(150px at 80% 20%);
+  transition: .5s ease-in-out;
+}
+.card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+.title {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-top: 12px;
+}
+.bg-title {
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+  color: black;
+  position: absolute;
+  max-width: 120%;
+  top: -150%;
+  margin-top:160px;
+  margin-left: 50px;
+  transition: .6s;
+}
+.card:hover .bg-title {
+  transform: translateY(60%);
+}
+.photo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 100%;
+  height: 220px;
+  transition: .5s;
+
+}
+.card:hover .photo {
+  top: 0%;
+  transform: translateY(0%);
+}
+.photo img {
+  position: absolute;
+  width: 220px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  transition: .5s;
+
+}
+.card:hover .photo img {
+  width: 260px;
+  top: 56%;
+}
+.cont {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 5;
+}
+.card:hover .content {
+  height: 190px;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: .5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.card:hover .feature {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: .5s;
+}
+.feature h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+.feature span {
+  min-width: 20px;
+  padding: 0 4px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: .4s;
+  border-radius: 4px;
+  cursor: pointer
+}
+.feature span:hover {
+  color: #000;
+  background: var(--product-color);
+}
+
+.btn-buy {
+  display:inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  cursor: pointer;
+  outline:none;
+}
+.card:hover .btn-buy {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+
+}
+.card:hover .btn-buy:hover {
+  background: var(--product-color);
+  transition-delay: 0;
+  transition: 0.05s;
+}
+
+.product-1 {
+  --product-color: #EB6CA4;
+}
+.product-2 {
+  --product-color: #EFB2AF;
+}
+.product-3 {
+  --product-color: #424242;
+}
+.product-4 {
+  --product-color: #3E3A4C;
+}
+.product-5 {
+  --product-color: #FEB500;
+}
+
+/*END DIV*/
+/*body {
+ background-color: #555;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}*/
+
+/* generic styling for the quote */
+#text::before {
+ content: "\"";
+}
+#text::after {
+ content: "\"";
+}
+#title::after {
+ content: " said:";
+ font-size: 20px;
+}
+
+/* Styling specific to an index card */
+/*.card{
+ font-family: Courier, monospace;
+ background-color: white;
+ background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
+ background-position-y: 34px;
+ height: 300px;
+ width: 500px;
+ padding: 0;
+ margin-top: 50px;
+
+ margin-right: 15px;
+}
+.card header {
+ background: linear-gradient(white, white 33px, pink 35px, pink 36px);
+ height: 36px;
+}
+.card-title {
+ position: relative;
+ left: 10px;
+ top: 8px;
+ font-size: 30px;
+ font-weight: bold;
+}
+.card-text {
+ position: relative;
+ top: 30px;
+ font-size: 18px;
+ margin: 0 20px;
+ line-height: 27px;
+}*/
+
+/* Styling specific to a sheet of lined paper */
+.sheet{
+ font-family: 'Indie Flower', cursive;
+ background-color: white;
+ background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
+ background-position-y: 49px;
+ height: 400px;
+ width: 1480px;
+ padding: 0;
+ margin-top: 50px;
+ max-width: 100%;
+ margin-left: 15px;
+ box-shadow: 0 0 30px #fc0000;
+ -webkit-box-shadow: 0 0 30px #fc0000;
+ -moz-box-shadow: 0 0 30px #fc0000;
+}
+.sheet header {
+ background-color: white;
+ background: linear-gradient(white, white 48px, #9198e5 49px, #9198e5 50px);
+ height: 50px;
+  max-width: 100%;
+}
+.sheet-title {
+   font-family: 'Akaya Telivigala', cursive;
+ position: center;
+ top: 20px;
+ font-size: 30px;
+ font-weight: bold;
+ padding-left: 10px;
+ color: black;
+  max-width: 100%;
+}
+.sheet-text {
+   font-family: 'Amita', cursive;
+ position: center;
+ top: 33px;
+ font-size: 22px;
+ width: 480px;
+color: black;
+ margin-left: 500px;
+ line-height: 27px;
+  max-width: 100%;
+
+}
+.margin {
+ width: 49px;
+ height: 100%;
+  max-width: 100%;
+}
+.l-margin {
+ float: left;
+ border-right: 2px solid pink;
+  max-width: 100%;
+}
+.r-margin {
+ float: right;
+ border-left: 1px solid pink;
+  max-width: 100%;
+}
+
+/* Styling for hole punches */
+.l-margin {
+ position: relative;
+  max-width: 100%;
+}
+.hole {
+ height: 20px;
+ width: 20px;
+ background-color: #555;
+ border-radius: 50%;
+ position: absolute;
+ left: 15px;
+  max-width: 100%;
+}
+.first-hole {
+ top: 30px;
+  max-width: 100%;
+}
+.second-hole {
+ top: 50%;
+  max-width: 100%;
+}
+.third-hole {
+ bottom: 30px;
+  max-width: 100%;
+}
+
+
+/*BUTTONS*/
+
+
+
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+/* 7 */
+.btn-7 {
+background: radial-gradient(circle,#ff006f 0%, rgba(118,174,241,1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #ff006f;
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover{
+  color: white;
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #ff006f;
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+/*CONTENT*/
+
+
+       .content1 {
+
+         text-align:center;
+         top:35%;
+         color: white;
+         max-width: 100%;
+         margin-left:610px;
+         margin-top:-400px;
+         transform:translate(-50%, -50%);
+         display:inline-block;
+       }
+       .content2 {
+
+         text-align:center;
+         top:35%;
+         color: white;
+         margin-left:730px;
+         margin-top:-400px;
+         transform:translate(-50%, -50%);
+         display:inline-block;
+       }
+       /* ----------- Non-Retina Screens ----------- */
+       /* @media screen
+         and (min-device-width: 1200px)
+         and (max-device-width: 1600px)
+         and (-webkit-min-device-pixel-ratio: 1) {
+       } */
+
+       /* ----------- Retina Screens ----------- */
+       /* @media screen
+         and (min-device-width: 1200px)
+         and (max-device-width: 1600px)
+         and (-webkit-min-device-pixel-ratio: 2)
+         and (min-resolution: 192dpi) {
+       } */
+       /* .container_size {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 100px 100px;
+} */
+}

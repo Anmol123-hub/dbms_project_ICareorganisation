@@ -1,0 +1,70 @@
+[29-Mar-2021 17:05:47 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'id16401874_icare'@'localhost' (using password: YES) in /home1/stteresakolkata/public_html/connection1.php on line 6
+[29-Mar-2021 17:05:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home1/stteresakolkata/public_html/connection1.php on line 11
+[29-Mar-2021 17:05:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/stteresakolkata/public_html/connection1.php on line 13
+[29-Mar-2021 17:05:55 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'id16401874_icare'@'localhost' (using password: YES) in /home1/stteresakolkata/public_html/connection1.php on line 6
+[29-Mar-2021 17:05:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home1/stteresakolkata/public_html/connection1.php on line 11
+[29-Mar-2021 17:05:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/stteresakolkata/public_html/connection1.php on line 13
+[29-Mar-2021 17:06:13 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home1/stteresakolkata/public_html/connection.php on line 9
+[29-Mar-2021 17:06:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home1/stteresakolkata/public_html/connection.php on line 9
+[29-Mar-2021 17:06:13 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home1/stteresakolkata/public_html/connection.php on line 14
+[29-Mar-2021 17:06:13 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/stteresakolkata/public_html/connection.php on line 16
+[29-Mar-2021 17:06:13 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home1/stteresakolkata/public_html/connection.php on line 25
+[30-Mar-2021 04:36:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/stteresakolkata/public_html/reset.php on line 174
+[30-Mar-2021 04:36:48 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/stteresakolkata/public_html/reset.php on line 184
+[30-Mar-2021 04:36:48 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset.php on line 190
+[30-Mar-2021 04:42:05 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/stteresakolkata/public_html/reset.php on line 174
+[30-Mar-2021 04:42:05 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/stteresakolkata/public_html/reset.php on line 184
+[30-Mar-2021 04:42:05 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset.php on line 190
+[30-Mar-2021 04:42:31 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/stteresakolkata/public_html/reset.php on line 174
+[30-Mar-2021 04:42:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/stteresakolkata/public_html/reset.php on line 184
+[30-Mar-2021 04:42:31 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset.php on line 190
+[30-Mar-2021 04:43:46 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/stteresakolkata/public_html/reset.php on line 12
+[30-Mar-2021 04:43:46 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset.php on line 18
+[30-Mar-2021 04:43:54 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/stteresakolkata/public_html/reset.php on line 12
+[30-Mar-2021 04:43:54 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset.php on line 18
+[30-Mar-2021 04:46:11 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/stteresakolkata/public_html/reset1.php on line 12
+[30-Mar-2021 04:46:11 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset1.php on line 18
+[30-Mar-2021 04:48:21 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset1.php on line 18
+[30-Mar-2021 04:49:51 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset1.php on line 19
+[30-Mar-2021 04:50:33 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset1.php on line 19
+[30-Mar-2021 04:53:13 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset1.php on line 18
+[30-Mar-2021 04:53:38 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset1.php on line 18
+[30-Mar-2021 04:55:42 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/reset1.php on line 17
+[31-Mar-2021 11:54:08 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/stteresakolkata/public_html/ot.php on line 27
+[31-Mar-2021 11:54:14 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/stteresakolkata/public_html/ot.php on line 27
+[31-Mar-2021 11:54:22 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/stteresakolkata/public_html/ot.php on line 27
+[01-Apr-2021 05:06:00 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/loading.php on line 28
+[01-Apr-2021 05:06:02 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/loading.php on line 28
+[01-Apr-2021 05:06:29 UTC] PHP Warning:  mysqli_query(): Empty query in /home1/stteresakolkata/public_html/loading.php on line 28
+[08-Apr-2021 07:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboardCheck.php:3) in /home1/stteresakolkata/public_html/dashboardCheck.php on line 9
+[08-Apr-2021 07:48:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboardCheck.php:3) in /home1/stteresakolkata/public_html/dashboardCheck.php on line 6
+[08-Apr-2021 07:49:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboardCheck.php:3) in /home1/stteresakolkata/public_html/dashboardCheck.php on line 6
+[08-Apr-2021 07:49:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/dashboardCheck.php:3) in /home1/stteresakolkata/public_html/dashboardCheck.php on line 6
+[08-Apr-2021 09:25:52 UTC] PHP Warning:  A non-numeric value encountered in /home1/stteresakolkata/public_html/another_donation.php on line 41
+[08-Apr-2021 14:26:01 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home1/stteresakolkata/public_html/fund.php on line 2
+[08-Apr-2021 14:26:07 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home1/stteresakolkata/public_html/fund.php on line 2
+[08-Apr-2021 14:26:11 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home1/stteresakolkata/public_html/fund.php on line 2
+[08-Apr-2021 14:26:20 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home1/stteresakolkata/public_html/fund.php on line 2
+[08-Apr-2021 14:26:27 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home1/stteresakolkata/public_html/fund.php on line 2
+[08-Apr-2021 14:27:13 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/stteresakolkata/public_html/fund.php on line 3
+[08-Apr-2021 14:27:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/fund.php:1) in /home1/stteresakolkata/public_html/fund.php on line 53
+[08-Apr-2021 14:28:05 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/stteresakolkata/public_html/fund.php on line 3
+[08-Apr-2021 14:28:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/fund.php:1) in /home1/stteresakolkata/public_html/fund.php on line 53
+[08-Apr-2021 14:29:28 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/stteresakolkata/public_html/fund.php on line 3
+[08-Apr-2021 14:29:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/fund.php:1) in /home1/stteresakolkata/public_html/fund.php on line 53
+[08-Apr-2021 14:29:46 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/stteresakolkata/public_html/fund.php on line 3
+[08-Apr-2021 14:29:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/fund.php:1) in /home1/stteresakolkata/public_html/fund.php on line 53
+[08-Apr-2021 14:30:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/stteresakolkata/public_html/fund.php on line 3
+[08-Apr-2021 14:30:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/fund.php:1) in /home1/stteresakolkata/public_html/fund.php on line 53
+[08-Apr-2021 14:32:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/stteresakolkata/public_html/fund.php on line 3
+[08-Apr-2021 14:32:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/stteresakolkata/public_html/fund.php:1) in /home1/stteresakolkata/public_html/fund.php on line 53
+[08-Apr-2021 16:00:42 UTC] PHP Parse error:  syntax error, unexpected '<' in /home1/stteresakolkata/public_html/print1.php on line 210
+[08-Apr-2021 16:00:44 UTC] PHP Parse error:  syntax error, unexpected '<' in /home1/stteresakolkata/public_html/print1.php on line 210
+[08-Apr-2021 16:02:24 UTC] PHP Warning:  Use of undefined constant Y - assumed 'Y' (this will throw an Error in a future version of PHP) in /home1/stteresakolkata/public_html/print1.php on line 215
+[08-Apr-2021 16:02:24 UTC] PHP Warning:  Use of undefined constant m - assumed 'm' (this will throw an Error in a future version of PHP) in /home1/stteresakolkata/public_html/print1.php on line 215
+[08-Apr-2021 16:02:24 UTC] PHP Warning:  A non-numeric value encountered in /home1/stteresakolkata/public_html/print1.php on line 215
+[08-Apr-2021 16:02:24 UTC] PHP Warning:  A non-numeric value encountered in /home1/stteresakolkata/public_html/print1.php on line 215
+[08-Apr-2021 16:02:24 UTC] PHP Warning:  Use of undefined constant d - assumed 'd' (this will throw an Error in a future version of PHP) in /home1/stteresakolkata/public_html/print1.php on line 215
+[08-Apr-2021 16:02:24 UTC] PHP Warning:  A non-numeric value encountered in /home1/stteresakolkata/public_html/print1.php on line 215
+[14-Apr-2021 15:41:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/print2.php on line 14
+[14-Apr-2021 15:41:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/stteresakolkata/public_html/print2.php on line 15

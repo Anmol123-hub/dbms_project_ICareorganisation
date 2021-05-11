@@ -1,0 +1,30 @@
+[23-Apr-2021 08:39:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 28
+[23-Apr-2021 08:40:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:43:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:43:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:43:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:47:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 08:47:28 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 08:48:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:49:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:49:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:50:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:51:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:53:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:53:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 08:54:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 08:54:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 08:54:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 08:56:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 08:57:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:58:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 08:59:24 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[23-Apr-2021 09:01:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 09:02:43 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 09:31:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 30
+[23-Apr-2021 09:32:32 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/database.php on line 29
+[27-Apr-2021 12:33:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/print1.php on line 45
+[27-Apr-2021 12:33:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/stteresakolkata/public_html/Donation/print1.php on line 47
+[27-Apr-2021 13:12:01 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home1/stteresakolkata/public_html/Donation/another_donation.php on line 61
+[27-Apr-2021 13:13:30 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home1/stteresakolkata/public_html/Donation/another_donation.php on line 61
+[27-Apr-2021 13:13:34 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home1/stteresakolkata/public_html/Donation/another_donation.php on line 61

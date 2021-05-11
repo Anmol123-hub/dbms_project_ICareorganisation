@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wastemanagement>
+  <scrapdealer>
+    <date>27 April 2021, 07:24:10 PM</date>
+    <name>S A scrap</name>
+    <telephone>096100 01210</telephone>
+    <website>https://sa-scrappurchase.business.site/</website>
+    <rating>Not Available</rating>
+    <address>B-467 Vidhyadhar nagar, Jaipur</address>
+  </scrapdealer>
+  <scrapdealer>
+    <date>27 April 2021, 07:30:09 PM</date>
+    <name>IRON SCRAP</name>
+    <telephone>079822 96437</telephone>
+    <website>https://ironscrap.business.site/</website>
+    <rating>3 Stars</rating>
+    <address>Mata Sundari Lane, New Delhi</address>
+  </scrapdealer>
+  <scrapdealer>
+    <date>27 April 2021, 07:32:50 PM</date>
+    <name>Bangalore Scrap Mart Incorporation</name>
+    <telephone>099455 55582</telephone>
+    <website>http://bangaloremart.in/</website>
+    <rating>3.2 Stars</rating>
+    <address>D.No. 12, 4th Cross, Muddamma Garden, Benson Town, Church Road, Jaya Chamarajendra Nagar, Banglore</address>
+  </scrapdealer>
+  <scrapdealer>
+    <date>27 April 2021, 07:34:48 PM</date>
+    <name>Bharat scrap buyer</name>
+    <telephone>098186 58738</telephone>
+    <website>http://bharatscrapbuyer.com/</website>
+    <rating>5 Stars</rating>
+    <address>A 52/9, Behind DT Mega Mall, DLF Phase 1, Gurugram</address>
+  </scrapdealer>
+  <scrapdealer>
+    <date>28 April 2021, 05:56:24 PM</date>
+    <name>Ayub Scrap Center</name>
+    <telephone>097645 55713</telephone>
+    <website>https://ayub-scrap-center.business.site/</website>
+    <rating>5 Stars</rating>
+    <address>411042, Lohiya Nagar, Ghorpade Peth, Swargate, Pune</address>
+  </scrapdealer>
+</wastemanagement>

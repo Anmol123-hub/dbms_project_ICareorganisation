@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel = "icon" href =  "DBMS_logo_final.png" type = "image/x-icon"> 
+   
+	<title>
+	HEALTH CARE HOME PAGE
+	</title>
+
+   <link rel="stylesheet" href="home.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&amp;display=swap">
+<link href="fixed-two-column.css" rel="stylesheet">
+
+	<style>
+	.navbar-custom .nav-item.active .nav-link,
+	.navbar-custom .nav-item:hover .nav-link {
+			border-bottom: 3px solid red;
+			color: white;
+	}
+
+
+
+	</style>
+	<script>
+		window.onload = function() {
+			document.body.style.zoom = "100%";
+			changeLink();
+		}
+
+		function changeLink() {
+		$(".navbar-nav a").on("click", function(){
+			$(".navbar-nav").find(".active").removeClass("active");
+			$(this).parent().addClass("active");
+		});
+	}
+
+	/*Slide show*/
+/*	const products = [
+	  {
+	    name: 'Gloves 2Pink',
+	    photo: 'https://hulajnogimicro.pl/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/p/n/png-micro_gloves_doodle_dot_2_.png',
+	    brand: '2Pink',
+	    color: '#EB6CA4'
+	  },
+	  {
+	    name: 'Coach Pink',
+	    photo: 'https://res.cloudinary.com/yakir/image/upload/v1578887770/r69yfic0g5ndp7vkv5rb.png',
+	    brand: 'Coach',
+	    color: '#EFB2AF'
+	  },
+	  {
+	    name: 'Belt',
+	    photo: 'https://media2.bulgari.com/f_auto,q_auto/production/dw226090d9/images/images/466646.png',
+	    brand: 'Bvlgari',
+	    color: '#424242'
+	  }
+	];*/
+
+/*BUTTON*/
+// // Defining event listener function
+// function displayWindowSize(){
+//     // Get width and height of the window excluding scrollbars
+//     var w = document.documentElement.clientWidth;
+//     var h = document.documentElement.clientHeight;
+//
+//     // Display result inside a div element
+//     document.getElementById("result").innerHTML = "Width: " + w + ", " + "Height: " + h;
+// }
+//
+// // Attaching the event listener function to window's resize event
+// // window.addEventListener("resize", displayWindowSize);
+// html.resizeTo(w,h);
+//
+// // Calling the function for the first time
+// displayWindowSize();
+
+
+	</script>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<header>
+	    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+	            <a class="navbar-brand" href="../home.html">
+	                <img src="DBMS_logo_final.png" height="60px" width="60px" alt="ICARE ORGANISATION"></img>
+	                <a href="../home.html" style="color: white; text-decoration: none;">ICare Organization</a>
+	            </a>
+
+	            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+	                </li>
+	                <li class="nav-item dropdown">
+	                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                    Our Modules
+	                  </a>
+	                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	                    <a class="dropdown-item" href="../Environment Management/home.html">Environment</a>
+	                    <a class="dropdown-item" href="home_page.html">Health Care</a>
+	                    <a class="dropdown-item" href="../Donation/donation-homepage.html">Donation</a>
+	                    <a class="dropdown-item" href="../mini_store/store.html">Mini Store</a>
+	                  </div>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html#aboutus">About Us</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html#team">Our Team</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../home.html#contactus">Contact Us</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../dashboardCheck.php">Dashboard</a>
+	                </li>
+	            </ul>
+	            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+	                <li>
+	                    <a class="nav-link" href="../index.html" style="font-weight: bold; font-size: 20px;">Logout <span><i class="fas fa-sign-out-alt"></i></span></a>
+	                </li>
+	            </ul>
+	        </div>
+	    </nav>
+	</header>
+
+<!-- <div class="container_size"> -->
+
+
+
+ <div class="wrapper" style="margin-top:100px; max-width: 100%;">
+
+
+<div class="fixed one">
+	<h1></h1>
+
+<div class="carousel_wrapper">
+  <div class="carousel">
+    <div class="slide one">
+      <img src="slide1.jpg" />
+    </div>
+    <div class="slide two">
+      <img src="slide2.png" />
+    </div>
+    <div class="slide three">
+      <img src="slide3.jpg" />
+    </div>
+    <div class="slide four">
+      <img src="slide4.jpg" />
+    </div>
+    <div class="slide five">
+      <img src="slide5.jpg" />
+    </div>
+    <div class="slide six">
+      <img src="slide6.png" />
+    </div>
+    <div class="slide seven">
+      <img src="slide7.jpg" />
+    </div>
+    <div class="slide eight">
+      <img src="slide8.jpg" />
+    </div>
+    <div class="slide nine">
+      <img src="slide9.png" />
+    </div>
+  </div>
+</div>
+<h1 class="h1" style="margin-top: 550px">WE WORK FOR MEDICAL DONATION AND DIAGNOSIS</h1>
+</div>
+
+</div>
+
+<div class="scroll" style=" max-width: 100%;">
+
+<img class="circular"src="medical_donation.gif" alt="donation" style=" max-width: 100%;"></img>
+
+	<div class="circular1">
+		<div  class="content1" style=" max-width: 100%;">
+
+		<h1><i class="fas fa-hand-holding-heart" style='color:white;margin-top:-10px; max-width: 100%;' >&nbsp</i>MEDICAL DONATION</h1>
+  <p style=" max-width: 100%;">
+		This module deals with the medical related
+donation.<br> It checks the eligibility of user for donating blood, plasma
+cells, etc. <br>Then it guides the user to the nearby donation centre.
+Then the user selects the donation <br>centre for donating and all the<br>
+information of this centre can be downloaded by the user from this
+module.</p>
+
+
+</div>
+<div class="frame " style="margin-top:-40px;  max-width: 100%;">
+	  <a href="blood_donation.html"><button class="custom-btn btn-7" style="; margin-right:100px; margin-left:-50px; width:200px; max-width: 100%;"><span>MEDICAL DONATION</span></button></a>
+</div>
+	 </div>
+</div>
+
+
+				<div class="fixed two" style="height:650px; max-width: 100%;">
+					<h1 class="h1" style="margin-top:30px; max-width: 100%;">AREAS WE FOCUS ON</h1>
+					<ul class="card-list">
+
+  <li>
+    <section class="product-container product-2">
+      <div class="card" style=" max-width: 100%;">
+        <div class="photo"><img src="card1.webp" alt="product" /></div>
+        <div class="cont">
+          <!-- <h1 class="title"></h1> -->
+          <h2 class="bg-title">BLOOD DONATION</h2>
+          <div class="feature size">
+            <!-- <h3>size :</h3> -->
+            <!-- <span>Donate blood save life</span>
+            <span>M</span>
+            <span>L</span>
+          </div> -->
+          <!-- <div class="feature color">
+            <h3>color :</h3>
+            <span>pink</span>
+            <span>blue</span>
+            <span>green</span>
+          </div> -->
+          <!-- <button class="btn-buy">buy now</button> -->
+        </div>
+      </div>
+    </section>
+  </li>
+  <li>
+    <section class="product-container product-3">
+      <div class="card">
+        <div class="photo"><img src="card2.webp" alt="product" /></div>
+        <div class="cont">
+          <!-- <h1 class="title">Bvlgari Belt</h1> -->
+          <h2 class="bg-title">PLASMA DONATION</h2>
+          <!-- <div class="feature size">
+            <h3>size :</h3>
+            <span>80cm</span>
+            <span>100cm</span>
+            <span>120cm</span>
+          </div>
+          <div class="feature color">
+            <h3>color :</h3>
+            <span>black</span>
+            <span>brown</span>
+            <span>white</span>
+          </div>
+          <button class="btn-buy">buy now</button> -->
+        </div>
+      </div>
+    </section>
+  </li>
+  <li>
+    <section class="product-container product-4">
+      <div class="card">
+        <div class="photo"><img src="card3.webp" alt="product" /></div>
+        <div class="cont">
+          <!-- <h1 class="title">Vert Helment</h1> -->
+          <h2 class="bg-title">MEDICAL DONATION</h2>
+          <!-- <div class="feature size">
+            <h3>size :</h3>
+            <span>S/M</span>
+            <span>L/XL</span>
+          </div>
+          <div class="feature color">
+            <h3>color :</h3>
+            <span>purple</span>
+            <span>blue</span>
+            <span>white</span>
+            <span>black</span>
+          </div>
+          <button class="btn-buy">buy now</button> -->
+        </div>
+      </div>
+    </section>
+  </li>
+  <li>
+    <section class="product-container product-5">
+      <div class="card">
+        <div class="photo"><img src="card4.webp" style="height:400px; width:300px" alt="product" /></div>
+        <div class="cont">
+          <!-- <h1 class="title">T-shirt Sip Protection</h1> -->
+          <h2 class="bg-title">MEDICAL DIAGNOSIS </h2>
+          <!-- <div class="feature size">
+            <h3>size :</h3>
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+            <span>XL</span>
+          </div>
+          <div class="feature color">
+            <h3>color :</h3>
+            <span>yellow</span>
+            <span>orange</span>
+            <span>light blue</span>
+          </div>
+          <button class="btn-buy">buy now</button> -->
+        </div>
+      </div>
+    </section>
+  </li>
+</ul>
+
+</div>
+</div>
+
+				<div class="scroll1">
+
+						<img class="circular2"src="medical_diagnosis.gif" alt="donation">
+
+
+					<div class="circular3">
+						<div  class="content2">
+
+						<h1><i class='fas fa-user-md' style='color:white;margin-top:50px'>&nbsp</i>MEDICAl DIAGNOSIS</h1>
+					<p>
+						This module also deals with the medical
+	diagnosis. <br>This helps in diagnosis of various symptoms and
+	predicting <br>the disease and directing the user to the hospital. For
+	minor diseases<br> and general check-up, it generates the prescription
+	for the user.</p>
+
+			</div>
+			<div class="frame " style="margin-top:-40px">
+				<a href="general_checkup.html"><button class="custom-btn btn-7" style="; margin-right:100px; margin-left:200px; width:200px"><span>MEDICAL DIAGNOSIS</span></button></a>
+			</div>
+				</div>
+
+				</div>
+
+
+						<div class="fixed three"style="height:500px;">
+							<div class="sheet">
+			 <div class="l-margin margin">
+				<div class="hole first-hole"></div>
+				<div class="hole second-hole"></div>
+				<div class="hole third-hole"></div>
+			 </div>
+			 <div class="r-margin margin"></div>
+			 <header>
+				<span class="sheet-title" style="max-width:100px">
+				 IMPORTANCE OF HEALTH CARE
+				</span>
+			 </header>
+			 <p class="sheet-text">This module deals with both medical donation and medical diagnosis. As we know that health is very important factor in our day to day life.It is very important to take care of our health and also donate for those who are in need. This will help in social welfare and will make our society healthier and happier. As our website cares for the society it has no points unruled for maintaining a beautiful society ahead.<br><b>Our care earns your smile:)<br>--THANKYOU</b></p>
+			</div>
+						</div>
+
+
+
+
+
+<!--footer-->
+
+			<footer class="footer">
+				<h2>Keep In Touch</h2>
+				<hr style="background-color: white;">
+				<div class="col-md-12">
+				<ul class="social-network social-circle"> 
+
+      <li><a href="https://www.facebook.com/icareorganisation123" target="_blank" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li> 
+
+			<li><a href="https://twitter.com/IcareOrganisat1" target="_blank" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> 
+
+			<li><a href="https://www.instagram.com/icareorganisation1/" target="_blank" class="icoGoogle" title="Instagram"><i class="fab fa-instagram"></i></a></li> 
+
+    </ul> 
+				</div>
+			  <br>
+				<h5><a style="color: blue;">Copyright ICare © 2019-2022. All Rights Reserved.</a></h5>
+			</footer>
+<!-- </div> -->
+
+
+
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+</script>
+
+</script>
+
+</html>
